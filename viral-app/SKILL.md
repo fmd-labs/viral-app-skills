@@ -29,6 +29,8 @@ viral-app --help
 export VIRAL_API_KEY="..."
 ```
 
+Get this key from viral.app dashboard at `Settings -> API Keys`.
+
 3. Verify access:
 
 ```bash
@@ -82,8 +84,10 @@ viral-app projects-add-to-account --body '{"projectId":"orgproj_...","accountId"
 ## Troubleshooting
 
 - `401 UNAUTHORIZED`: missing/invalid API key; verify `VIRAL_API_KEY` or `-H "x-api-key: ..."` value.
+- `401` can also happen with expired/revoked keys or wrong org context.
 - `429` or retry hints: back off and retry later; inspect response headers such as `Retry-After`.
 - Empty `data` arrays: validate filters, project/account IDs, and date range constraints.
+- Never expose API keys in commits; rotate keys after sharing for tests.
 
 ## Agent defaults
 

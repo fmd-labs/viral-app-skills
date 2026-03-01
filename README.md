@@ -61,6 +61,12 @@ This creates `viral-app` in `~/.local/bin` (or `$VIRAL_APP_BIN_DIR`).
 
 ## Auth
 
+Get an API key from viral.app dashboard:
+
+1. Open `Settings -> API Keys`
+2. Create a new key for your org
+3. Copy it once and store it in a password manager
+
 Use your API key in one of these ways:
 
 ```bash
@@ -73,6 +79,22 @@ viral-app -H "x-api-key: ..." accounts-list --per-page 5
 ```
 
 If `VIRAL_API_KEY` is set, the wrapper injects `x-api-key` automatically unless you already pass that header.
+
+Quick verification:
+
+```bash
+viral-app accounts-list --per-page 1
+```
+
+Auth troubleshooting:
+
+- `401 UNAUTHORIZED`: missing/expired/revoked key, wrong org context, or malformed header.
+- If your key contains special characters, prefer quotes when exporting.
+
+Security notes:
+
+- Never commit API keys to git.
+- Rotate keys immediately after sharing in chats/screenshots.
 
 ## Usage
 
