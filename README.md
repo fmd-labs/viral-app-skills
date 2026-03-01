@@ -1,4 +1,4 @@
-# skills
+# viral-app-skills
 
 Project-local CLI for the viral.app API, powered by `restish` with a pinned local OpenAPI spec.
 
