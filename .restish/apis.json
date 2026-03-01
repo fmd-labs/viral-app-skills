@@ -1,9 +1,9 @@
 {
   "$schema": "https://rest.sh/schemas/apis.json",
-  "skills": {
+  "viral-app": {
     "base": "https://viral.app/api/v1",
     "spec_files": [
-      "$SKILLS_CLI_ROOT/openapi/viral.openapi.patched.json"
+      "$VIRAL_APP_CLI_ROOT/openapi/viral.openapi.patched.json"
     ]
   }
 }

@@ -1,0 +1,73 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+RESTISH_BIN="$ROOT_DIR/.tools/restish/restish"
+
+if [[ ! -x "$RESTISH_BIN" ]]; then
+  echo "restish is not installed." >&2
+  echo "Run: $ROOT_DIR/scripts/install-restish.sh" >&2
+  exit 1
+fi
+
+export VIRAL_APP_CLI_ROOT="$ROOT_DIR"
+export RESTISH_CONFIG_DIR="$ROOT_DIR/.restish"
+export RESTISH_CACHE_DIR="$ROOT_DIR/.restish/cache"
+mkdir -p "$RESTISH_CONFIG_DIR" "$RESTISH_CACHE_DIR"
+
+HAS_OUTPUT_FORMAT_FLAG=0
+for arg in "$@"; do
+  case "$arg" in
+    -o|--rsh-output-format|--rsh-output-format=*)
+      HAS_OUTPUT_FORMAT_FLAG=1
+      break
+      ;;
+  esac
+done
+
+if [[ $HAS_OUTPUT_FORMAT_FLAG -eq 0 && -z "${RSH_OUTPUT_FORMAT:-}" ]]; then
+  export RSH_OUTPUT_FORMAT="json"
+fi
+
+if [[ -z "${RSH_NO_PAGINATE:-}" ]]; then
+  export RSH_NO_PAGINATE="true"
+fi
+
+HAS_API_KEY_HEADER=0
+ARGS=("$@")
+for ((i = 0; i < ${#ARGS[@]}; i++)); do
+  arg="${ARGS[$i]}"
+  case "$arg" in
+    -H|--rsh-header)
+      if (( i + 1 < ${#ARGS[@]} )); then
+        header="${ARGS[$((i + 1))]}"
+        header_lc="$(printf '%s' "$header" | tr '[:upper:]' '[:lower:]')"
+        if [[ "$header_lc" == x-api-key:* ]]; then
+          HAS_API_KEY_HEADER=1
+          break
+        fi
+        i=$((i + 1))
+      fi
+      ;;
+    --rsh-header=*)
+      header="${arg#--rsh-header=}"
+      header_lc="$(printf '%s' "$header" | tr '[:upper:]' '[:lower:]')"
+      if [[ "$header_lc" == x-api-key:* ]]; then
+        HAS_API_KEY_HEADER=1
+        break
+      fi
+      ;;
+  esac
+done
+
+EXTRA_ARGS=()
+if [[ -n "${VIRAL_API_KEY:-}" && $HAS_API_KEY_HEADER -eq 0 ]]; then
+  EXTRA_ARGS=(-H "x-api-key: ${VIRAL_API_KEY}")
+fi
+
+CMD=("$RESTISH_BIN" "viral-app")
+if [[ ${#EXTRA_ARGS[@]} -gt 0 ]]; then
+  CMD+=("${EXTRA_ARGS[@]}")
+fi
+CMD+=("$@")
+exec "${CMD[@]}"

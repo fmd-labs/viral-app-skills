@@ -1,96 +1,125 @@
-# viral-app-skills
+# viral-app
 
-Project-local CLI for the viral.app API, powered by `restish` with a pinned local OpenAPI spec.
+`viral-app` is an agent skill package plus local CLI for the viral.app API.
+It uses `restish` with a pinned OpenAPI spec and defaults to JSON output.
 
-## What this gives you
+## Install as a skill
 
-- `skills` command via `./bin/skills`
-- JSON output by default (agent-friendly)
-- All endpoints from the viral.app OpenAPI spec
-- Pinned local spec (`openapi/viral.openapi.patched.json`)
+Install from GitHub with the open `skills` ecosystem CLI:
 
-## Setup
+```bash
+npx skills add fmd-labs/viral-app-skills --skill viral-app
+```
 
-1. Install globally (recommended):
+List skills from this repo:
+
+```bash
+npx skills add fmd-labs/viral-app-skills --list
+```
+
+Install for specific agents:
+
+```bash
+npx skills add fmd-labs/viral-app-skills --skill viral-app -a codex
+npx skills add fmd-labs/viral-app-skills --skill viral-app -a claude-code
+npx skills add fmd-labs/viral-app-skills --skill viral-app -a cursor
+```
+
+## Local CLI setup
+
+1. Install globally:
 
 ```bash
 ./scripts/install-global.sh
 ```
 
-This creates a `skills` command in `~/.local/bin` (or `$SKILLS_BIN_DIR`) so you can run `skills` from anywhere.
+This creates `viral-app` in `~/.local/bin` (or `$VIRAL_APP_BIN_DIR`).
 
-2. Or install project-local only:
+2. Or install project-local runtime only:
 
 ```bash
 ./scripts/install-restish.sh
 ```
 
-3. Fetch/update the pinned OpenAPI spec:
+3. Update pinned spec:
 
 ```bash
 ./scripts/update-openapi.sh
 ```
 
-4. Run CLI:
+4. Validate local prerequisites:
 
 ```bash
-skills --help
+./scripts/preflight.sh
 ```
+
+## Auth
+
+Use your API key in one of these ways:
+
+```bash
+export VIRAL_API_KEY="..."
+viral-app accounts-list --per-page 5
+```
+
+```bash
+viral-app -H "x-api-key: ..." accounts-list --per-page 5
+```
+
+If `VIRAL_API_KEY` is set, the wrapper injects `x-api-key` automatically unless you already pass that header.
 
 ## Usage
 
-List all available commands:
-
 ```bash
-skills --help
+viral-app --help
+viral-app accounts-list --help
+viral-app accounts-list --per-page 5
 ```
 
-Example account listing:
+Override output format:
 
 ```bash
-skills accounts-list --per-page 5
+viral-app -o table accounts-list --per-page 5
 ```
 
-## Output format
-
-Default is JSON. To override:
+Disable/enable pagination behavior:
 
 ```bash
-skills -o table accounts-list --per-page 5
+RSH_NO_PAGINATE=true viral-app accounts-list --per-page 5
+RSH_NO_PAGINATE=false viral-app accounts-list --per-page 5
 ```
 
-Auto-pagination is disabled by default for cleaner scripted output. Override if needed:
-
-```bash
-RSH_NO_PAGINATE=false skills accounts-list --per-page 5
-```
-
-## Update pinned OpenAPI spec
-
-```bash
-./scripts/update-openapi.sh
-```
-
-## Agent Discoverability
-
-The built-in help is enough to explore:
-
-```bash
-skills --help
-skills accounts-list --help
-```
-
-You can also generate a full machine-readable command index from the pinned spec:
+Generate machine-readable command index:
 
 ```bash
 ./scripts/command-index.sh | jq .
 ```
 
-## Distribution
+## Quality checks
 
-This repo layout is ready for source distribution.
+Run smoke checks:
 
-- Share/clone the repo and run `./scripts/install-global.sh` (or `./scripts/install-restish.sh` for local-only use).
+```bash
+./scripts/smoke.sh
+```
+
+CI verifies:
+
+- Shell syntax + `shellcheck`
+- Skill detection with `npx skills add . --list`
+- CLI help + command index validity
+- Smoke behavior for unauthenticated API response shape
+
+## Releases and publishing
+
+Use SemVer tags and GitHub Releases:
+
+```bash
+git tag v0.1.0
+git push origin v0.1.0
+```
+
+Tag pushes (`v*`) trigger the release workflow.
 
 To remove the global command:
 
