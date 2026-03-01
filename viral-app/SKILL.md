@@ -1,7 +1,7 @@
 ---
 name: viral-app
 description: Use the viral.app API from an agent with a local CLI for account analytics, tracked videos/accounts, projects, creator hub, and live data operations.
-homepage: https://github.com/fmd-labs/viral-app-skills
+metadata: {"homepage":"https://github.com/fmd-labs/viral-app-skills"}
 ---
 
 # viral-app
@@ -17,10 +17,10 @@ Use this skill when you need to read or manage data through the viral.app API.
 
 ## Quick start
 
-1. Install runtime once:
+1. Ensure `viral-app` CLI is installed and available in `PATH`.
 
 ```bash
-./scripts/install-restish.sh
+viral-app --help
 ```
 
 2. Set API key:
@@ -32,7 +32,7 @@ export VIRAL_API_KEY="..."
 3. Verify access:
 
 ```bash
-./bin/viral-app accounts-list --per-page 1
+viral-app accounts-list --per-page 1
 ```
 
 The wrapper injects `x-api-key` automatically from `VIRAL_API_KEY` unless a header is already passed.
@@ -50,26 +50,26 @@ The wrapper injects `x-api-key` automatically from `VIRAL_API_KEY` unless a head
 Discover available operations:
 
 ```bash
-./bin/viral-app --help
-./bin/viral-app <command> --help
+viral-app --help
+viral-app <command> --help
 ```
 
 Common reads:
 
 ```bash
-./bin/viral-app accounts-list --per-page 10
-./bin/viral-app videos-list --per-page 10
-./bin/viral-app analytics-get-kpis
-./bin/viral-app analytics-top-videos --per-page 10
-./bin/viral-app integrations-apps-list
+viral-app accounts-list --per-page 10
+viral-app videos-list --per-page 10
+viral-app analytics-get-kpis
+viral-app analytics-top-videos --per-page 10
+viral-app integrations-apps-list
 ```
 
 Common mutations:
 
 ```bash
-./bin/viral-app projects-create --body '{"name":"My Project"}'
-./bin/viral-app accounts-tracked-refresh --body '{"accounts":["orgacc_..."]}'
-./bin/viral-app projects-add-to-account --body '{"projectId":"orgproj_...","accountId":"orgacc_..."}'
+viral-app projects-create --body '{"name":"My Project"}'
+viral-app accounts-tracked-refresh --body '{"accounts":["orgacc_..."]}'
+viral-app projects-add-to-account --body '{"projectId":"orgproj_...","accountId":"orgacc_..."}'
 ```
 
 ## Safety rules
@@ -84,11 +84,6 @@ Common mutations:
 - `401 UNAUTHORIZED`: missing/invalid API key; verify `VIRAL_API_KEY` or `-H "x-api-key: ..."` value.
 - `429` or retry hints: back off and retry later; inspect response headers such as `Retry-After`.
 - Empty `data` arrays: validate filters, project/account IDs, and date range constraints.
-- If command names are unclear, regenerate a command map:
-
-```bash
-./scripts/command-index.sh | jq .
-```
 
 ## Agent defaults
 

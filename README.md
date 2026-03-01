@@ -11,6 +11,12 @@ Install from GitHub with the open `skills` ecosystem CLI:
 npx skills add fmd-labs/viral-app-skills --skill viral-app
 ```
 
+Install from the direct skill path (portable across ecosystems):
+
+```bash
+npx skills add https://github.com/fmd-labs/viral-app-skills/tree/main/viral-app
+```
+
 List skills from this repo:
 
 ```bash
