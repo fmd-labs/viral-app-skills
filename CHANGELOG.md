@@ -6,6 +6,8 @@ The format is based on Keep a Changelog, and this project follows Semantic Versi
 
 ## [Unreleased]
 
+## [0.1.0] - 2026-03-18
+
 ### Added
 - Root `SKILL.md` package (`name: viral-app`) for skills ecosystem compatibility.
 - `viral-app` CLI wrapper with `VIRAL_API_KEY` header injection.
@@ -17,3 +19,7 @@ The format is based on Keep a Changelog, and this project follows Semantic Versi
 - Renamed user-facing command from `skills` to `viral-app`.
 - Switched restish API alias from `skills` to `viral-app`.
 - Improved command index generation to prefer OpenAPI `operationId`.
+- Refreshed the pinned OpenAPI spec from `https://viral.app/api/v1/openapi.json`.
+- Added Viral Video Library endpoints for listing viral videos and fetching per-video AI insights.
+- Expanded live account lookup responses with `is_verified`, `is_private`, `follower_count`, `following_count`, `video_count`, and `bio`.
+- Clarified `/accounts` percentile field ordering and average-view descriptions in the schema examples.
