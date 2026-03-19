@@ -1,7 +1,8 @@
 ---
 name: viral-app
 description: Use the viral.app API from an agent with a local CLI for account analytics, tracked videos/accounts, projects, creator hub, and live data operations.
-metadata: {"homepage":"https://github.com/fmd-labs/viral-app-skills"}
+homepage: https://github.com/fmd-labs/viral-app-skills/tree/main/viral-app
+metadata: {"openclaw":{"homepage":"https://github.com/fmd-labs/viral-app-skills/tree/main/viral-app","requires":{"bins":["viral-app"],"env":["VIRAL_API_KEY"]},"primaryEnv":"VIRAL_API_KEY"}}
 ---
 
 # viral-app

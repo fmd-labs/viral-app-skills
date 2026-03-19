@@ -6,6 +6,13 @@ The format is based on Keep a Changelog, and this project follows Semantic Versi
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-03-19
+
+### Changed
+- Declared `viral-app` as a required binary for OpenClaw/ClawHub skill loading.
+- Declared `VIRAL_API_KEY` as the required and primary environment variable for the skill.
+- Added a top-level skill homepage so registry listings can show the GitHub source more clearly.
+
 ## [0.1.0] - 2026-03-18
 
 ### Added
