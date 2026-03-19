@@ -77,10 +77,12 @@ viral-app projects-add-to-account --body '{"projectId":"orgproj_...","accountId"
 
 ## Report templates
 
-Use the bundled leaderboard template when the user asks for a weekly Slack leaderboard or ranking report:
+Use the bundled report templates when the user asks for Slack-ready summaries or ranking reports:
 
-- Template: [assets/templates/leaderboard.md](assets/templates/leaderboard.md)
-- Example output: [assets/examples/leaderboard-sample.md](assets/examples/leaderboard-sample.md)
+- Leaderboard template: [assets/templates/leaderboard.md](assets/templates/leaderboard.md)
+- Leaderboard example: [assets/examples/leaderboard-sample.md](assets/examples/leaderboard-sample.md)
+- Viral Video Library template: [assets/templates/viral-video-library-report.md](assets/templates/viral-video-library-report.md)
+- Viral Video Library example: [assets/examples/viral-video-library-report-sample.md](assets/examples/viral-video-library-report-sample.md)
 
 Rules for leaderboard-style outputs:
 
@@ -90,6 +92,15 @@ Rules for leaderboard-style outputs:
 - Keep numbers compact, for example `1.4M` or `180K`.
 - Use period-over-period trend markers where the comparison window is available.
 - Prefer returning the rendered report plus the source viral.app links when useful.
+
+Rules for Viral Video Library reports:
+
+- Use linked titles that point to the Viral Video Library detail page.
+- Use abbreviated metrics, for example `473K` or `18.2%`.
+- Include a hashtags line for every entry.
+- Use a single hook line in the form `Hook (<archetype>): text + visual + audio`.
+- Do not use "Audio not surfaced" phrasing.
+- Do not invent fields when insights are missing; use `not confidently detected`.
 
 ## Linking Back Into viral.app
 
