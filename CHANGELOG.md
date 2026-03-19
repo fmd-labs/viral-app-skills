@@ -6,6 +6,15 @@ The format is based on Keep a Changelog, and this project follows Semantic Versi
 
 ## [Unreleased]
 
+## [0.1.5] - 2026-03-19
+
+### Added
+- Added a bundled creator payments + CPM report template for Slack-ready payout queue summaries.
+- Added a production-backed sample creator payments + CPM report under `viral-app/assets/examples/`.
+
+### Changed
+- Documented payout-report formatting and deep-link rules in the skill instructions, including combined upcoming-payout links filtered by creator and campaign.
+
 ## [0.1.4] - 2026-03-19
 
 ### Added

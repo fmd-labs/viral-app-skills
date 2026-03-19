@@ -83,6 +83,8 @@ Use the bundled report templates when the user asks for Slack-ready summaries or
 - Leaderboard example: [assets/examples/leaderboard-sample.md](assets/examples/leaderboard-sample.md)
 - Viral Video Library template: [assets/templates/viral-video-library-report.md](assets/templates/viral-video-library-report.md)
 - Viral Video Library example: [assets/examples/viral-video-library-report-sample.md](assets/examples/viral-video-library-report-sample.md)
+- Creator payments + CPM template: [assets/templates/creator-payments-cpm-report.md](assets/templates/creator-payments-cpm-report.md)
+- Creator payments + CPM example: [assets/examples/creator-payments-cpm-report-sample.md](assets/examples/creator-payments-cpm-report-sample.md)
 
 Rules for leaderboard-style outputs:
 
@@ -101,6 +103,14 @@ Rules for Viral Video Library reports:
 - Use a single hook line in the form `Hook (<archetype>): text + visual + audio`.
 - Do not use "Audio not surfaced" phrasing.
 - Do not invent fields when insights are missing; use `not confidently detected`.
+
+Rules for creator payments + CPM reports:
+
+- Use current in-progress upcoming payouts from Creator Hub for the ranking section.
+- Use Creator Hub payout links filtered by both `creatorIds` and `campaigns`.
+- Compare each payout row against the most recent completed payout window for the same creator and campaign when available.
+- Use current vs previous equal-length periods for org-wide KPI deltas.
+- Keep payout amounts exact, view totals compact, Effective CPM to 4 decimals, and spend per video to 2 decimals.
 
 ## Linking Back Into viral.app
 
@@ -196,6 +206,12 @@ https://viral.app/app/creator-hub/payouts/due?creatorIds=<orgCreatorId>
 
 ```text
 https://viral.app/app/creator-hub/payouts/due?campaigns=<campaignId>
+```
+
+- Creator Hub upcoming payouts filtered by creator and campaign:
+
+```text
+https://viral.app/app/creator-hub/payouts/upcoming?creatorIds=<orgCreatorId>&campaigns=<campaignId>
 ```
 
 - Other payout tabs preserve the same filters:
