@@ -75,6 +75,22 @@ viral-app accounts-tracked-refresh --body '{"accounts":["orgacc_..."]}'
 viral-app projects-add-to-account --body '{"projectId":"orgproj_...","accountId":"orgacc_..."}'
 ```
 
+## Report templates
+
+Use the bundled leaderboard template when the user asks for a weekly Slack leaderboard or ranking report:
+
+- Template: [assets/templates/leaderboard.md](assets/templates/leaderboard.md)
+- Example output: [assets/examples/leaderboard-sample.md](assets/examples/leaderboard-sample.md)
+
+Rules for leaderboard-style outputs:
+
+- Follow the template structure unless the user explicitly asks for a different format.
+- Use analytics account links for account-level leaderboard sections.
+- Use tracked video detail links for video leaderboard sections.
+- Keep numbers compact, for example `1.4M` or `180K`.
+- Use period-over-period trend markers where the comparison window is available.
+- Prefer returning the rendered report plus the source viral.app links when useful.
+
 ## Linking Back Into viral.app
 
 When a user would benefit from opening the data in the product UI, include a direct viral.app app link in your response.

@@ -6,6 +6,15 @@ The format is based on Keep a Changelog, and this project follows Semantic Versi
 
 ## [Unreleased]
 
+## [0.1.4] - 2026-03-19
+
+### Added
+- Added a bundled leaderboard report template and linked sample output under `viral-app/assets/`.
+- Documented the leaderboard template workflow in the skill instructions.
+
+### Changed
+- Updated the sample leaderboard output to include direct viral.app account and video links resolved from production data.
+
 ## [0.1.3] - 2026-03-19
 
 ### Added
