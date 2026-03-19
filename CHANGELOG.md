@@ -6,11 +6,13 @@ The format is based on Keep a Changelog, and this project follows Semantic Versi
 
 ## [Unreleased]
 
+## [0.1.2] - 2026-03-19
+
 ### Added
 - Dedicated root `AGENTS.md` with an agent-focused release, versioning, and ClawHub publishing playbook.
 
 ### Changed
-- Root `README.md` now points agents to the dedicated release guide in `AGENTS.md`.
+- Reverted root `README.md` to stay user-facing and keep release-process guidance out of the main README.
 
 ## [0.1.1] - 2026-03-19
 

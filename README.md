@@ -3,18 +3,6 @@
 `viral-app` is an agent skill package plus local CLI for the viral.app API.
 It uses `restish` with a pinned OpenAPI spec and defaults to JSON output.
 
-## Scope
-
-This root README is the canonical repo-level operating doc for:
-
-- local CLI setup and auth
-- skill installation for agent runtimes
-- OpenAPI refresh and validation workflow
-- GitHub release and ClawHub publish steps
-- metadata requirements that keep the ClawHub listing accurate
-
-Agent-specific release and publishing workflow lives in [`AGENTS.md`](AGENTS.md).
-
 ## Install as a skill
 
 Install from GitHub with the open `skills` ecosystem CLI:
@@ -42,20 +30,6 @@ npx skills add fmd-labs/viral-app-skills --skill viral-app -a codex
 npx skills add fmd-labs/viral-app-skills --skill viral-app -a claude-code
 npx skills add fmd-labs/viral-app-skills --skill viral-app -a cursor
 ```
-
-OpenClaw / ClawHub-compatible install:
-
-```bash
-clawhub install viral-app
-```
-
-The published skill declares these load-time requirements in [`viral-app/SKILL.md`](viral-app/SKILL.md):
-
-- required binary: `viral-app`
-- required env var: `VIRAL_API_KEY`
-- primary env: `VIRAL_API_KEY`
-
-That means OpenClaw/ClawHub can warn earlier when the binary or API key is missing.
 
 ## Local CLI setup
 
@@ -110,7 +84,6 @@ Quick verification:
 
 ```bash
 viral-app accounts-list --per-page 1
-viral-app library-viral-videos-list --limit 1
 ```
 
 Auth troubleshooting:
@@ -129,7 +102,6 @@ Security notes:
 viral-app --help
 viral-app accounts-list --help
 viral-app accounts-list --per-page 5
-viral-app library-viral-videos-list --help
 ```
 
 Override output format:
@@ -166,70 +138,16 @@ CI verifies:
 - CLI help + command index validity
 - Smoke behavior for unauthenticated API response shape
 
-Recommended pre-release check after a spec refresh:
-
-```bash
-./scripts/update-openapi.sh
-./scripts/preflight.sh
-./scripts/smoke.sh
-./bin/viral-app --help
-./bin/viral-app library-viral-videos-list --help
-```
-
 ## Releases and publishing
-
-### GitHub release
 
 Use SemVer tags and GitHub Releases:
 
 ```bash
-git tag v0.1.1
-git push origin v0.1.1
+git tag v0.1.2
+git push origin v0.1.2
 ```
 
 Tag pushes (`v*`) trigger the release workflow.
-
-### ClawHub publish
-
-Install and log in once:
-
-```bash
-npm install -g clawhub
-clawhub login
-```
-
-Publish the actual skill folder, not the repo root:
-
-```bash
-clawhub publish ./viral-app \
-  --slug viral-app \
-  --name "Viral App" \
-  --version 0.1.1 \
-  --changelog "Declare required viral-app binary, VIRAL_API_KEY, and homepage metadata for OpenClaw/ClawHub."
-```
-
-Verify the published version:
-
-```bash
-clawhub inspect viral-app
-```
-
-### Ongoing maintenance flow
-
-When the upstream API changes, the normal path is:
-
-1. Refresh the pinned spec with `./scripts/update-openapi.sh`.
-2. Validate with `./scripts/preflight.sh` and `./scripts/smoke.sh`.
-3. Check any new commands with `./bin/viral-app --help` and `<command> --help`.
-4. If auth or runtime requirements changed, update [`viral-app/SKILL.md`](viral-app/SKILL.md) metadata.
-5. Update [`CHANGELOG.md`](CHANGELOG.md), tag a new GitHub release, then publish the matching skill version to ClawHub.
-
-### Upgrade paths
-
-- Git checkout users: `git pull`
-- Global wrapper users from this checkout: no extra step unless the install path changed
-- `skills add ...` users: rerun the same `npx skills add ... --skill viral-app -a <agent>` command
-- ClawHub users: `clawhub update viral-app`
 
 To remove the global command:
 
