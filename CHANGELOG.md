@@ -6,6 +6,12 @@ The format is based on Keep a Changelog, and this project follows Semantic Versi
 
 ## [Unreleased]
 
+## [0.1.3] - 2026-03-19
+
+### Added
+- Documented how agents should build direct viral.app product links for analytics, creator hub, payouts, and viral video library flows.
+- Added concrete production URL patterns and supported query params so agents can return UI links alongside CLI results.
+
 ## [0.1.2] - 2026-03-19
 
 ### Added

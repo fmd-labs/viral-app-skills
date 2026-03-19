@@ -75,6 +75,185 @@ viral-app accounts-tracked-refresh --body '{"accounts":["orgacc_..."]}'
 viral-app projects-add-to-account --body '{"projectId":"orgproj_...","accountId":"orgacc_..."}'
 ```
 
+## Linking Back Into viral.app
+
+When a user would benefit from opening the data in the product UI, include a direct viral.app app link in your response.
+
+Default production base:
+
+```text
+https://viral.app/app
+```
+
+Rules:
+
+- Prefer linking to the most specific page the app actually supports.
+- For tracked videos and library videos, use dedicated detail pages.
+- For accounts and creators, prefer filtered list/dashboard views. The app does not currently expose a dedicated account detail page or creator detail page route.
+- For multi-value filters, use comma-separated values in a single query param.
+- For date ranges on analytics and creator-hub overview pages, use `df` and `dt` with `YYYY-MM-DD`.
+- Preserve `viewMode` when linking account or creator-related analytics:
+  - `internal`
+  - `competitors`
+  - `all`
+
+Common routes:
+
+- Analytics overview filtered by tracked account:
+
+```text
+https://viral.app/app/analytics/overview?accounts=<orgAccountId>&viewMode=internal
+```
+
+- Analytics accounts filtered by tracked account:
+
+```text
+https://viral.app/app/analytics/accounts?accounts=<orgAccountId>&viewMode=internal
+```
+
+- Analytics videos filtered by tracked account:
+
+```text
+https://viral.app/app/analytics/videos?accounts=<orgAccountId>&viewMode=internal
+```
+
+- Analytics videos filtered by tracked account and date range:
+
+```text
+https://viral.app/app/analytics/videos?accounts=<orgAccountId>&viewMode=internal&df=2026-03-01&dt=2026-03-18
+```
+
+- Tracked video detail page:
+
+```text
+https://viral.app/app/analytics/videos/tiktok/7491234567890123456
+```
+
+- Analytics overview filtered by creator-owned tracked accounts:
+
+```text
+https://viral.app/app/analytics/overview?accounts=<orgAccountId1>,<orgAccountId2>&viewMode=all
+```
+
+- Creator Hub creators filtered by campaign:
+
+```text
+https://viral.app/app/creator-hub/creators?campaigns=<campaignId>
+```
+
+- Creator Hub creators filtered by search and include archived/inactive creators:
+
+```text
+https://viral.app/app/creator-hub/creators?search=alex%40example.com&status=all
+```
+
+- Creator Hub campaigns filtered by creator:
+
+```text
+https://viral.app/app/creator-hub/campaigns?creatorIds=<orgCreatorId>
+```
+
+- Creator Hub campaign detail page:
+
+```text
+https://viral.app/app/creator-hub/campaigns/<campaignId>
+```
+
+- Creator Hub payouts filtered by creator:
+
+```text
+https://viral.app/app/creator-hub/payouts/due?creatorIds=<orgCreatorId>
+```
+
+- Creator Hub payouts filtered by campaign:
+
+```text
+https://viral.app/app/creator-hub/payouts/due?campaigns=<campaignId>
+```
+
+- Other payout tabs preserve the same filters:
+
+```text
+https://viral.app/app/creator-hub/payouts/upcoming?creatorIds=<orgCreatorId>
+https://viral.app/app/creator-hub/payouts/canceled?campaigns=<campaignId>
+https://viral.app/app/creator-hub/payouts/paid?creatorIds=<orgCreatorId>
+```
+
+- Viral video library filtered list:
+
+```text
+https://viral.app/app/library/viral-videos?search=notion&dateRange=30d&sort=views
+```
+
+- Viral video library filtered by brand/region/minimum views:
+
+```text
+https://viral.app/app/library/viral-videos?brandId=<brandId>&regions=US,GB&minViews=100000&sort=outlier
+```
+
+- Viral video library detail page:
+
+```text
+https://viral.app/app/library/viral-videos/tiktok/7491234567890123456
+```
+
+Supported filter keys you can safely use:
+
+- Analytics overview/accounts/videos:
+  - `accounts`
+  - `platforms`
+  - `projects`
+  - `contentTypes`
+  - `viewMode`
+  - `df`
+  - `dt`
+- Analytics overview only:
+  - `publicationMode`
+  - `topVideosBy`
+  - `topAccountsBy`
+  - `topCreatorsBy`
+  - `topEntity`
+  - `topListsPerPage`
+- Creator Hub creators:
+  - `search`
+  - `campaigns`
+  - `status`
+- Creator Hub campaigns:
+  - `search`
+  - `status`
+  - `creatorIds`
+- Creator Hub overview / campaign overview:
+  - `campaigns`
+  - `creatorIds`
+  - `scope`
+  - `publicationMode`
+  - `df`
+  - `dt`
+- Creator Hub payouts:
+  - `creatorIds`
+  - `campaigns`
+- Viral video library:
+  - `search`
+  - `brandId`
+  - `dateRange`
+  - `sort`
+  - `minViews`
+  - `minOutlierFactor`
+  - `regions`
+  - `productTypes`
+  - `verticals`
+  - `formats`
+  - `hookArchetypes`
+  - `productDetected`
+  - `brandDetected`
+  - `matchedTerms`
+
+If you do not know the correct org-scoped IDs yet:
+
+- link to the closest filtered list you can build confidently
+- say what the link shows
+- avoid inventing unknown IDs or unsupported paths
+
 ## Safety rules
 
 - Confirm intent before `POST`, `PUT`, `PATCH`, or `DELETE` unless the user explicitly asked for that mutation.
