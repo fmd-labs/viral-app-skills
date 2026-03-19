@@ -13,6 +13,8 @@ This root README is the canonical repo-level operating doc for:
 - GitHub release and ClawHub publish steps
 - metadata requirements that keep the ClawHub listing accurate
 
+Agent-specific release and publishing workflow lives in [`AGENTS.md`](AGENTS.md).
+
 ## Install as a skill
 
 Install from GitHub with the open `skills` ecosystem CLI:
