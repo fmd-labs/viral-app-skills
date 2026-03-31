@@ -6,6 +6,13 @@ The format is based on Keep a Changelog, and this project follows Semantic Versi
 
 ## [Unreleased]
 
+## [0.2.1] - 2026-03-31
+
+### Changed
+- Updated the published skill instructions to document the required `payouts-calculate` -> `payouts-initiate` integrity-token flow.
+- Clarified payout mutation safety rules around `autoApproveTalentir` and `acknowledgeFullPayoutLiability`.
+- Updated the skill text to reflect Facebook alongside TikTok, Instagram, and YouTube.
+
 ## [0.2.0] - 2026-03-31
 
 ### Changed
