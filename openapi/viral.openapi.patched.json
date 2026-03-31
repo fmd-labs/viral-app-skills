@@ -89,14 +89,17 @@
             "required": true,
             "schema": {
               "enum": [
+                "facebook",
                 "instagram",
                 "tiktok",
                 "youtube"
               ],
-              "description": "Social media platform (tiktok, instagram, youtube)",
+              "type": "string",
+              "description": "Social media platform (facebook, instagram, tiktok, youtube)",
               "examples": [
-                "tiktok",
+                "facebook",
                 "instagram",
+                "tiktok",
                 "youtube"
               ]
             }
@@ -151,14 +154,17 @@
                   "properties": {
                     "platform": {
                       "enum": [
+                        "facebook",
                         "instagram",
                         "tiktok",
                         "youtube"
                       ],
-                      "description": "Social media platform (tiktok, instagram, youtube)",
+                      "type": "string",
+                      "description": "Social media platform (facebook, instagram, tiktok, youtube)",
                       "examples": [
-                        "tiktok",
+                        "facebook",
                         "instagram",
+                        "tiktok",
                         "youtube"
                       ]
                     },
@@ -272,6 +278,7 @@
                             "video",
                             "slideshow"
                           ],
+                          "type": "string",
                           "description": "Filter by content types (video, slideshow)",
                           "examples": [
                             [
@@ -1095,14 +1102,17 @@
             "required": true,
             "schema": {
               "enum": [
+                "facebook",
                 "instagram",
                 "tiktok",
                 "youtube"
               ],
-              "description": "Social media platform (tiktok, instagram, youtube)",
+              "type": "string",
+              "description": "Social media platform (facebook, instagram, tiktok, youtube)",
               "examples": [
-                "tiktok",
+                "facebook",
                 "instagram",
+                "tiktok",
                 "youtube"
               ]
             }
@@ -1156,14 +1166,17 @@
                   "properties": {
                     "platform": {
                       "enum": [
+                        "facebook",
                         "instagram",
                         "tiktok",
                         "youtube"
                       ],
-                      "description": "Social media platform (tiktok, instagram, youtube)",
+                      "type": "string",
+                      "description": "Social media platform (facebook, instagram, tiktok, youtube)",
                       "examples": [
-                        "tiktok",
+                        "facebook",
                         "instagram",
+                        "tiktok",
                         "youtube"
                       ]
                     },
@@ -1883,14 +1896,17 @@
             "required": true,
             "schema": {
               "enum": [
+                "facebook",
                 "instagram",
                 "tiktok",
                 "youtube"
               ],
-              "description": "Social media platform (tiktok, instagram, youtube)",
+              "type": "string",
+              "description": "Social media platform (facebook, instagram, tiktok, youtube)",
               "examples": [
-                "tiktok",
+                "facebook",
                 "instagram",
+                "tiktok",
                 "youtube"
               ]
             }
@@ -1945,14 +1961,17 @@
                   "properties": {
                     "platform": {
                       "enum": [
+                        "facebook",
                         "instagram",
                         "tiktok",
                         "youtube"
                       ],
-                      "description": "Social media platform (tiktok, instagram, youtube)",
+                      "type": "string",
+                      "description": "Social media platform (facebook, instagram, tiktok, youtube)",
                       "examples": [
-                        "tiktok",
+                        "facebook",
                         "instagram",
+                        "tiktok",
                         "youtube"
                       ]
                     },
@@ -2672,14 +2691,17 @@
             "required": true,
             "schema": {
               "enum": [
+                "facebook",
                 "instagram",
                 "tiktok",
                 "youtube"
               ],
-              "description": "Social media platform (tiktok, instagram, youtube)",
+              "type": "string",
+              "description": "Social media platform (facebook, instagram, tiktok, youtube)",
               "examples": [
-                "tiktok",
+                "facebook",
                 "instagram",
+                "tiktok",
                 "youtube"
               ]
             }
@@ -2762,14 +2784,17 @@
                         "properties": {
                           "platform": {
                             "enum": [
+                              "facebook",
                               "instagram",
                               "tiktok",
                               "youtube"
                             ],
-                            "description": "Social media platform (tiktok, instagram, youtube)",
+                            "type": "string",
+                            "description": "Social media platform (facebook, instagram, tiktok, youtube)",
                             "examples": [
-                              "tiktok",
+                              "facebook",
                               "instagram",
+                              "tiktok",
                               "youtube"
                             ]
                           },
@@ -2883,6 +2908,7 @@
                                   "video",
                                   "slideshow"
                                 ],
+                                "type": "string",
                                 "description": "Filter by content types (video, slideshow)",
                                 "examples": [
                                   [
@@ -3723,16 +3749,12 @@
             "required": true,
             "schema": {
               "enum": [
-                "instagram",
+                "facebook",
                 "tiktok",
+                "instagram",
                 "youtube"
               ],
-              "description": "Social media platform (tiktok, instagram, youtube)",
-              "examples": [
-                "tiktok",
-                "instagram",
-                "youtube"
-              ]
+              "type": "string"
             }
           },
           {
@@ -3841,14 +3863,17 @@
                         "properties": {
                           "platform": {
                             "enum": [
+                              "facebook",
                               "instagram",
                               "tiktok",
                               "youtube"
                             ],
-                            "description": "Social media platform (tiktok, instagram, youtube)",
+                            "type": "string",
+                            "description": "Social media platform (facebook, instagram, tiktok, youtube)",
                             "examples": [
-                              "tiktok",
+                              "facebook",
                               "instagram",
+                              "tiktok",
                               "youtube"
                             ]
                           },
@@ -4677,7 +4702,8 @@
                         "relevance",
                         "date",
                         "likes"
-                      ]
+                      ],
+                      "type": "string"
                     },
                     {
                       "type": "null"
@@ -4710,7 +4736,8 @@
                         "last-3-months",
                         "last-6-months",
                         "all-time"
-                      ]
+                      ],
+                      "type": "string"
                     },
                     {
                       "type": "null"
@@ -4729,7 +4756,8 @@
                         "week",
                         "month",
                         "year"
-                      ]
+                      ],
+                      "type": "string"
                     },
                     {
                       "type": "null"
@@ -4759,14 +4787,17 @@
                         "properties": {
                           "platform": {
                             "enum": [
+                              "facebook",
                               "instagram",
                               "tiktok",
                               "youtube"
                             ],
-                            "description": "Social media platform (tiktok, instagram, youtube)",
+                            "type": "string",
+                            "description": "Social media platform (facebook, instagram, tiktok, youtube)",
                             "examples": [
-                              "tiktok",
+                              "facebook",
                               "instagram",
+                              "tiktok",
                               "youtube"
                             ]
                           },
@@ -4880,6 +4911,7 @@
                                   "video",
                                   "slideshow"
                                 ],
+                                "type": "string",
                                 "description": "Filter by content types (video, slideshow)",
                                 "examples": [
                                   [
@@ -5843,14 +5875,17 @@
                         "properties": {
                           "platform": {
                             "enum": [
+                              "facebook",
                               "instagram",
                               "tiktok",
                               "youtube"
                             ],
-                            "description": "Social media platform (tiktok, instagram, youtube)",
+                            "type": "string",
+                            "description": "Social media platform (facebook, instagram, tiktok, youtube)",
                             "examples": [
-                              "tiktok",
+                              "facebook",
                               "instagram",
+                              "tiktok",
                               "youtube"
                             ]
                           },
@@ -6553,6 +6588,7 @@
                 "asc",
                 "desc"
               ],
+              "type": "string",
               "default": "desc",
               "description": "Sort direction",
               "examples": [
@@ -6560,8 +6596,6 @@
                 "desc"
               ]
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           },
@@ -6589,21 +6623,24 @@
                   "type": "array",
                   "items": {
                     "enum": [
+                      "facebook",
                       "instagram",
                       "tiktok",
                       "youtube"
                     ],
-                    "description": "Social media platform (tiktok, instagram, youtube)",
+                    "type": "string",
+                    "description": "Social media platform (facebook, instagram, tiktok, youtube)",
                     "examples": [
-                      "tiktok",
+                      "facebook",
                       "instagram",
+                      "tiktok",
                       "youtube"
                     ]
                   },
-                  "description": "Social media platforms (tiktok, instagram, youtube)",
+                  "description": "Social media platforms (facebook, instagram, tiktok, youtube)",
                   "examples": [
                     [
-                      "tiktok",
+                      "facebook",
                       "instagram"
                     ],
                     [
@@ -6616,10 +6653,10 @@
                   "type": "null"
                 }
               ],
-              "description": "Social media platforms (tiktok, instagram, youtube)",
+              "description": "Social media platforms (facebook, instagram, tiktok, youtube)",
               "examples": [
                 [
-                  "tiktok",
+                  "facebook",
                   "instagram"
                 ],
                 [
@@ -6755,6 +6792,7 @@
                       "video",
                       "slideshow"
                     ],
+                    "type": "string",
                     "description": "Filter by content types (video, slideshow)",
                     "examples": [
                       [
@@ -6805,10 +6843,9 @@
                 "internal",
                 "competitors",
                 "all"
-              ]
+              ],
+              "type": "string"
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           }
@@ -6832,10 +6869,12 @@
                           },
                           "platform": {
                             "enum": [
+                              "facebook",
                               "instagram",
                               "tiktok",
                               "youtube"
                             ],
+                            "type": "string",
                             "description": "Social media platform (tiktok, instagram, youtube)"
                           },
                           "platformAccountId": {
@@ -6886,7 +6925,8 @@
                                   "APPLE_REQUIRED_AGREEMENT",
                                   "APPLE_INVALID_VENDOR",
                                   "APPLE_INVALID_CREDENTIALS"
-                                ]
+                                ],
+                                "type": "string"
                               },
                               {
                                 "type": "null"
@@ -7283,10 +7323,12 @@
                               },
                               "platform": {
                                 "enum": [
+                                  "facebook",
                                   "instagram",
                                   "tiktok",
                                   "youtube"
                                 ],
+                                "type": "string",
                                 "description": "Platform identifier"
                               },
                               "username": {
@@ -7350,7 +7392,8 @@
                                       "APPLE_REQUIRED_AGREEMENT",
                                       "APPLE_INVALID_VENDOR",
                                       "APPLE_INVALID_CREDENTIALS"
-                                    ]
+                                    ],
+                                    "type": "string"
                                   },
                                   {
                                     "type": "null"
@@ -8000,21 +8043,24 @@
                         "type": "array",
                         "items": {
                           "enum": [
+                            "facebook",
                             "instagram",
                             "tiktok",
                             "youtube"
                           ],
-                          "description": "Social media platform (tiktok, instagram, youtube)",
+                          "type": "string",
+                          "description": "Social media platform (facebook, instagram, tiktok, youtube)",
                           "examples": [
-                            "tiktok",
+                            "facebook",
                             "instagram",
+                            "tiktok",
                             "youtube"
                           ]
                         },
-                        "description": "Social media platforms (tiktok, instagram, youtube)",
+                        "description": "Social media platforms (facebook, instagram, tiktok, youtube)",
                         "examples": [
                           [
-                            "tiktok",
+                            "facebook",
                             "instagram"
                           ],
                           [
@@ -8027,10 +8073,10 @@
                         "type": "null"
                       }
                     ],
-                    "description": "Social media platforms (tiktok, instagram, youtube)",
+                    "description": "Social media platforms (facebook, instagram, tiktok, youtube)",
                     "examples": [
                       [
-                        "tiktok",
+                        "facebook",
                         "instagram"
                       ],
                       [
@@ -8150,6 +8196,7 @@
                             "video",
                             "slideshow"
                           ],
+                          "type": "string",
                           "description": "Filter by content types (video, slideshow)",
                           "examples": [
                             [
@@ -8192,7 +8239,8 @@
                       "internal",
                       "competitors",
                       "all"
-                    ]
+                    ],
+                    "type": "string"
                   }
                 },
                 "description": "Filtering options for accounts export (excludes pagination)",
@@ -8771,6 +8819,7 @@
                 "asc",
                 "desc"
               ],
+              "type": "string",
               "default": "desc",
               "description": "Sort direction",
               "examples": [
@@ -8778,8 +8827,6 @@
                 "desc"
               ]
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           },
@@ -8852,21 +8899,24 @@
                   "type": "array",
                   "items": {
                     "enum": [
+                      "facebook",
                       "instagram",
                       "tiktok",
                       "youtube"
                     ],
-                    "description": "Social media platform (tiktok, instagram, youtube)",
+                    "type": "string",
+                    "description": "Social media platform (facebook, instagram, tiktok, youtube)",
                     "examples": [
-                      "tiktok",
+                      "facebook",
                       "instagram",
+                      "tiktok",
                       "youtube"
                     ]
                   },
-                  "description": "Social media platforms (tiktok, instagram, youtube)",
+                  "description": "Social media platforms (facebook, instagram, tiktok, youtube)",
                   "examples": [
                     [
-                      "tiktok",
+                      "facebook",
                       "instagram"
                     ],
                     [
@@ -8879,10 +8929,10 @@
                   "type": "null"
                 }
               ],
-              "description": "Social media platforms (tiktok, instagram, youtube)",
+              "description": "Social media platforms (facebook, instagram, tiktok, youtube)",
               "examples": [
                 [
-                  "tiktok",
+                  "facebook",
                   "instagram"
                 ],
                 [
@@ -8949,10 +8999,9 @@
                 "internal",
                 "competitors",
                 "all"
-              ]
+              ],
+              "type": "string"
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           }
@@ -8975,10 +9024,12 @@
                           },
                           "platform": {
                             "enum": [
+                              "facebook",
                               "instagram",
                               "tiktok",
                               "youtube"
-                            ]
+                            ],
+                            "type": "string"
                           },
                           "platformAccountId": {
                             "type": "string"
@@ -9050,7 +9101,8 @@
                               "user",
                               "system",
                               "api_token"
-                            ]
+                            ],
+                            "type": "string"
                           },
                           "userId": {
                             "type": "string"
@@ -9081,7 +9133,8 @@
                                   "APPLE_REQUIRED_AGREEMENT",
                                   "APPLE_INVALID_VENDOR",
                                   "APPLE_INVALID_CREDENTIALS"
-                                ]
+                                ],
+                                "type": "string"
                               },
                               {
                                 "type": "null"
@@ -9092,6 +9145,23 @@
                             "anyOf": [
                               {
                                 "type": "string"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "displayName": {
+                            "anyOf": [
+                              {
+                                "anyOf": [
+                                  {
+                                    "type": "string"
+                                  },
+                                  {
+                                    "type": "null"
+                                  }
+                                ]
                               },
                               {
                                 "type": "null"
@@ -9248,10 +9318,12 @@
                                         },
                                         "platform": {
                                           "enum": [
+                                            "facebook",
                                             "instagram",
                                             "tiktok",
                                             "youtube"
-                                          ]
+                                          ],
+                                          "type": "string"
                                         },
                                         "platformAccountId": {
                                           "type": "string"
@@ -9261,6 +9333,16 @@
                                           "default": false
                                         },
                                         "username": {
+                                          "anyOf": [
+                                            {
+                                              "type": "string"
+                                            },
+                                            {
+                                              "type": "null"
+                                            }
+                                          ]
+                                        },
+                                        "displayName": {
                                           "anyOf": [
                                             {
                                               "type": "string"
@@ -9420,6 +9502,7 @@
                           "userId": "user_PxyfnFj5JUx5",
                           "orgId": "org_GbuDqv3RjdSW",
                           "username": "viral_creator",
+                          "displayName": "Viral Creator",
                           "individualVideos": 15,
                           "analyticsLatestLoadAt": "2025-12-20T08:00:00Z",
                           "user": {
@@ -9445,8 +9528,8 @@
                         },
                         {
                           "id": "orgacc_pbWejFdiFqQK",
-                          "platform": "instagram",
-                          "platformAccountId": "76586201675",
+                          "platform": "facebook",
+                          "platformAccountId": "100044278427060",
                           "maxVideos": 30,
                           "orgCreatorId": null,
                           "hashtagsFilter": null,
@@ -9457,7 +9540,8 @@
                           "actorType": "user",
                           "userId": "user_9uzTzeSobgkd",
                           "orgId": "org_QgqAir1Eydfc",
-                          "username": "fashion_influencer",
+                          "username": "mrtechnicaldifficult",
+                          "displayName": "Mr Technical Difficult",
                           "individualVideos": 8,
                           "analyticsLatestLoadAt": "2025-12-17T10:15:00Z",
                           "user": {
@@ -9923,14 +10007,17 @@
                       "properties": {
                         "platform": {
                           "enum": [
+                            "facebook",
                             "instagram",
                             "tiktok",
                             "youtube"
                           ],
-                          "description": "Social media platform (tiktok, instagram, youtube)",
+                          "type": "string",
+                          "description": "Social media platform (facebook, instagram, tiktok, youtube)",
                           "examples": [
-                            "tiktok",
+                            "facebook",
                             "instagram",
+                            "tiktok",
                             "youtube"
                           ]
                         },
@@ -10174,14 +10261,17 @@
                                 "properties": {
                                   "platform": {
                                     "enum": [
+                                      "facebook",
                                       "instagram",
                                       "tiktok",
                                       "youtube"
                                     ],
-                                    "description": "Social media platform (tiktok, instagram, youtube)",
+                                    "type": "string",
+                                    "description": "Social media platform (facebook, instagram, tiktok, youtube)",
                                     "examples": [
-                                      "tiktok",
+                                      "facebook",
                                       "instagram",
+                                      "tiktok",
                                       "youtube"
                                     ]
                                   },
@@ -10196,7 +10286,8 @@
                                       "RATE_LIMITED",
                                       "UNKNOWN",
                                       "RESTRICTED"
-                                    ]
+                                    ],
+                                    "type": "string"
                                   },
                                   "message": {
                                     "type": "string"
@@ -11086,14 +11177,17 @@
                       "properties": {
                         "platform": {
                           "enum": [
+                            "facebook",
                             "instagram",
                             "tiktok",
                             "youtube"
                           ],
-                          "description": "Social media platform (tiktok, instagram, youtube)",
+                          "type": "string",
+                          "description": "Social media platform (facebook, instagram, tiktok, youtube)",
                           "examples": [
-                            "tiktok",
+                            "facebook",
                             "instagram",
+                            "tiktok",
                             "youtube"
                           ]
                         },
@@ -11121,6 +11215,10 @@
                 "examples": [
                   {
                     "items": [
+                      {
+                        "platform": "facebook",
+                        "id": "100044278427060"
+                      },
                       {
                         "platform": "tiktok",
                         "id": "102215305149431808"
@@ -11179,14 +11277,17 @@
                           },
                           "platform": {
                             "enum": [
+                              "facebook",
                               "instagram",
                               "tiktok",
                               "youtube"
                             ],
-                            "description": "Social media platform (tiktok, instagram, youtube)",
+                            "type": "string",
+                            "description": "Social media platform (facebook, instagram, tiktok, youtube)",
                             "examples": [
-                              "tiktok",
+                              "facebook",
                               "instagram",
+                              "tiktok",
                               "youtube"
                             ]
                           }
@@ -11220,6 +11321,12 @@
                     {
                       "refreshed": [
                         {
+                          "id": "orgacc_VA542FB0001",
+                          "platformAccountId": "100044278427060",
+                          "username": "mrtechnicaldifficult",
+                          "platform": "facebook"
+                        },
+                        {
                           "id": "orgacc_W97M6KLWV4Yq",
                           "platformAccountId": "102215305149431808",
                           "username": "vioundvivi",
@@ -11238,11 +11345,12 @@
                           "platform": "youtube"
                         }
                       ],
-                      "totalRefreshed": 3,
+                      "totalRefreshed": 4,
                       "eventIds": [
                         "01HQX5N6R4Z8K7WJQT9S3YVMGH",
                         "01HQX5N6R5A9M8XKRU0T4ZWNHJ",
-                        "01HQX5N6R6B0N9YMRV1U5AXOJK"
+                        "01HQX5N6R6B0N9YMRV1U5AXOJK",
+                        "01HQX5N6R7C1P0ZNSW2V6BYPKL"
                       ]
                     }
                   ]
@@ -14996,14 +15104,17 @@
             "required": true,
             "schema": {
               "enum": [
+                "facebook",
                 "instagram",
                 "tiktok",
                 "youtube"
               ],
-              "description": "Social media platform (tiktok, instagram, youtube)",
+              "type": "string",
+              "description": "Social media platform (facebook, instagram, tiktok, youtube)",
               "examples": [
-                "tiktok",
+                "facebook",
                 "instagram",
+                "tiktok",
                 "youtube"
               ]
             }
@@ -15621,14 +15732,17 @@
                           "properties": {
                             "platform": {
                               "enum": [
+                                "facebook",
                                 "instagram",
                                 "tiktok",
                                 "youtube"
                               ],
-                              "description": "Social media platform (tiktok, instagram, youtube)",
+                              "type": "string",
+                              "description": "Social media platform (facebook, instagram, tiktok, youtube)",
                               "examples": [
-                                "tiktok",
+                                "facebook",
                                 "instagram",
+                                "tiktok",
                                 "youtube"
                               ]
                             },
@@ -15887,7 +16001,7 @@
       "get": {
         "operationId": "videos.download",
         "summary": "Get video download link",
-        "description": "Fetches a temporary MP4 download link for a specific TikTok, Instagram, or YouTube video. Requires an Ultra or Enterprise plan.",
+        "description": "Fetches a temporary MP4 download link for a specific TikTok, Instagram, or YouTube video. Requires an Ultra-or-higher plan.",
         "tags": [
           "Video Analytics"
         ],
@@ -15898,14 +16012,17 @@
             "required": true,
             "schema": {
               "enum": [
+                "facebook",
                 "instagram",
                 "tiktok",
                 "youtube"
               ],
-              "description": "Social media platform (tiktok, instagram, youtube)",
+              "type": "string",
+              "description": "Social media platform (facebook, instagram, tiktok, youtube)",
               "examples": [
-                "tiktok",
+                "facebook",
                 "instagram",
+                "tiktok",
                 "youtube"
               ]
             }
@@ -16499,14 +16616,17 @@
             "required": true,
             "schema": {
               "enum": [
+                "facebook",
                 "instagram",
                 "tiktok",
                 "youtube"
               ],
-              "description": "Social media platform (tiktok, instagram, youtube)",
+              "type": "string",
+              "description": "Social media platform (facebook, instagram, tiktok, youtube)",
               "examples": [
-                "tiktok",
+                "facebook",
                 "instagram",
+                "tiktok",
                 "youtube"
               ]
             }
@@ -17050,14 +17170,17 @@
             "required": true,
             "schema": {
               "enum": [
+                "facebook",
                 "instagram",
                 "tiktok",
                 "youtube"
               ],
-              "description": "Social media platform (tiktok, instagram, youtube)",
+              "type": "string",
+              "description": "Social media platform (facebook, instagram, tiktok, youtube)",
               "examples": [
-                "tiktok",
+                "facebook",
                 "instagram",
+                "tiktok",
                 "youtube"
               ]
             }
@@ -17639,6 +17762,7 @@
                 "asc",
                 "desc"
               ],
+              "type": "string",
               "default": "desc",
               "description": "Sort direction",
               "examples": [
@@ -17646,8 +17770,6 @@
                 "desc"
               ]
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           },
@@ -17660,21 +17782,24 @@
                   "type": "array",
                   "items": {
                     "enum": [
+                      "facebook",
                       "instagram",
                       "tiktok",
                       "youtube"
                     ],
-                    "description": "Social media platform (tiktok, instagram, youtube)",
+                    "type": "string",
+                    "description": "Social media platform (facebook, instagram, tiktok, youtube)",
                     "examples": [
-                      "tiktok",
+                      "facebook",
                       "instagram",
+                      "tiktok",
                       "youtube"
                     ]
                   },
-                  "description": "Social media platforms (tiktok, instagram, youtube)",
+                  "description": "Social media platforms (facebook, instagram, tiktok, youtube)",
                   "examples": [
                     [
-                      "tiktok",
+                      "facebook",
                       "instagram"
                     ],
                     [
@@ -17687,10 +17812,10 @@
                   "type": "null"
                 }
               ],
-              "description": "Social media platforms (tiktok, instagram, youtube)",
+              "description": "Social media platforms (facebook, instagram, tiktok, youtube)",
               "examples": [
                 [
-                  "tiktok",
+                  "facebook",
                   "instagram"
                 ],
                 [
@@ -17776,6 +17901,7 @@
                       "video",
                       "slideshow"
                     ],
+                    "type": "string",
                     "description": "Filter by content types (video, slideshow)",
                     "examples": [
                       [
@@ -17891,7 +18017,8 @@
               "items": {
                 "enum": [
                   "projects"
-                ]
+                ],
+                "type": "string"
               },
               "description": "Expand related resources in the response",
               "examples": [
@@ -17914,10 +18041,9 @@
                 "internal",
                 "competitors",
                 "all"
-              ]
+              ],
+              "type": "string"
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           }
@@ -18314,7 +18440,8 @@
                                   "APPLE_REQUIRED_AGREEMENT",
                                   "APPLE_INVALID_VENDOR",
                                   "APPLE_INVALID_CREDENTIALS"
-                                ]
+                                ],
+                                "type": "string"
                               },
                               {
                                 "type": "null"
@@ -18985,21 +19112,24 @@
                   "type": "array",
                   "items": {
                     "enum": [
+                      "facebook",
                       "instagram",
                       "tiktok",
                       "youtube"
                     ],
-                    "description": "Social media platform (tiktok, instagram, youtube)",
+                    "type": "string",
+                    "description": "Social media platform (facebook, instagram, tiktok, youtube)",
                     "examples": [
-                      "tiktok",
+                      "facebook",
                       "instagram",
+                      "tiktok",
                       "youtube"
                     ]
                   },
-                  "description": "Social media platforms (tiktok, instagram, youtube)",
+                  "description": "Social media platforms (facebook, instagram, tiktok, youtube)",
                   "examples": [
                     [
-                      "tiktok",
+                      "facebook",
                       "instagram"
                     ],
                     [
@@ -19012,10 +19142,10 @@
                   "type": "null"
                 }
               ],
-              "description": "Social media platforms (tiktok, instagram, youtube)",
+              "description": "Social media platforms (facebook, instagram, tiktok, youtube)",
               "examples": [
                 [
-                  "tiktok",
+                  "facebook",
                   "instagram"
                 ],
                 [
@@ -19082,10 +19212,9 @@
                 "internal",
                 "competitors",
                 "all"
-              ]
+              ],
+              "type": "string"
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           },
@@ -19113,6 +19242,7 @@
                       "video",
                       "slideshow"
                     ],
+                    "type": "string",
                     "description": "Filter by content types (video, slideshow)",
                     "examples": [
                       [
@@ -19695,21 +19825,24 @@
                         "type": "array",
                         "items": {
                           "enum": [
+                            "facebook",
                             "instagram",
                             "tiktok",
                             "youtube"
                           ],
-                          "description": "Social media platform (tiktok, instagram, youtube)",
+                          "type": "string",
+                          "description": "Social media platform (facebook, instagram, tiktok, youtube)",
                           "examples": [
-                            "tiktok",
+                            "facebook",
                             "instagram",
+                            "tiktok",
                             "youtube"
                           ]
                         },
-                        "description": "Social media platforms (tiktok, instagram, youtube)",
+                        "description": "Social media platforms (facebook, instagram, tiktok, youtube)",
                         "examples": [
                           [
-                            "tiktok",
+                            "facebook",
                             "instagram"
                           ],
                           [
@@ -19722,10 +19855,10 @@
                         "type": "null"
                       }
                     ],
-                    "description": "Social media platforms (tiktok, instagram, youtube)",
+                    "description": "Social media platforms (facebook, instagram, tiktok, youtube)",
                     "examples": [
                       [
-                        "tiktok",
+                        "facebook",
                         "instagram"
                       ],
                       [
@@ -19789,6 +19922,7 @@
                             "video",
                             "slideshow"
                           ],
+                          "type": "string",
                           "description": "Filter by content types (video, slideshow)",
                           "examples": [
                             [
@@ -19896,7 +20030,8 @@
                     "items": {
                       "enum": [
                         "projects"
-                      ]
+                      ],
+                      "type": "string"
                     },
                     "description": "Expand related resources in the response",
                     "examples": [
@@ -19911,7 +20046,8 @@
                       "internal",
                       "competitors",
                       "all"
-                    ]
+                    ],
+                    "type": "string"
                   }
                 },
                 "description": "Filtering options for videos export (excludes pagination)",
@@ -20490,6 +20626,7 @@
                 "asc",
                 "desc"
               ],
+              "type": "string",
               "default": "desc",
               "description": "Sort direction",
               "examples": [
@@ -20497,8 +20634,6 @@
                 "desc"
               ]
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           },
@@ -20511,21 +20646,24 @@
                   "type": "array",
                   "items": {
                     "enum": [
+                      "facebook",
                       "instagram",
                       "tiktok",
                       "youtube"
                     ],
-                    "description": "Social media platform (tiktok, instagram, youtube)",
+                    "type": "string",
+                    "description": "Social media platform (facebook, instagram, tiktok, youtube)",
                     "examples": [
-                      "tiktok",
+                      "facebook",
                       "instagram",
+                      "tiktok",
                       "youtube"
                     ]
                   },
-                  "description": "Social media platforms (tiktok, instagram, youtube)",
+                  "description": "Social media platforms (facebook, instagram, tiktok, youtube)",
                   "examples": [
                     [
-                      "tiktok",
+                      "facebook",
                       "instagram"
                     ],
                     [
@@ -20538,10 +20676,10 @@
                   "type": "null"
                 }
               ],
-              "description": "Social media platforms (tiktok, instagram, youtube)",
+              "description": "Social media platforms (facebook, instagram, tiktok, youtube)",
               "examples": [
                 [
-                  "tiktok",
+                  "facebook",
                   "instagram"
                 ],
                 [
@@ -20572,10 +20710,9 @@
                 "internal",
                 "competitors",
                 "all"
-              ]
+              ],
+              "type": "string"
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           }
@@ -20604,10 +20741,12 @@
                           },
                           "platform": {
                             "enum": [
+                              "facebook",
                               "instagram",
                               "tiktok",
                               "youtube"
-                            ]
+                            ],
+                            "type": "string"
                           },
                           "createdAt": {
                             "type": "string",
@@ -20624,7 +20763,8 @@
                               "user",
                               "system",
                               "api_token"
-                            ]
+                            ],
+                            "type": "string"
                           },
                           "userId": {
                             "type": "string"
@@ -20655,7 +20795,8 @@
                                   "APPLE_REQUIRED_AGREEMENT",
                                   "APPLE_INVALID_VENDOR",
                                   "APPLE_INVALID_CREDENTIALS"
-                                ]
+                                ],
+                                "type": "string"
                               },
                               {
                                 "type": "null"
@@ -20666,6 +20807,23 @@
                             "anyOf": [
                               {
                                 "type": "string"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "accountDisplayName": {
+                            "anyOf": [
+                              {
+                                "anyOf": [
+                                  {
+                                    "type": "string"
+                                  },
+                                  {
+                                    "type": "null"
+                                  }
+                                ]
                               },
                               {
                                 "type": "null"
@@ -20764,6 +20922,7 @@
                           "lastErrorAt",
                           "lastErrorCode",
                           "username",
+                          "accountDisplayName",
                           "analyticsLatestLoadAt",
                           "orgAccountMaxVideos",
                           "platformAccountId",
@@ -20816,8 +20975,8 @@
                         },
                         {
                           "id": "orgvid_Fiudsi4oSByx",
-                          "platform": "instagram",
-                          "platformVideoId": "C2VfGhIjKlM",
+                          "platform": "facebook",
+                          "platformVideoId": "1487463749406225",
                           "orgAccountId": "orgacc_pbWejFdiFqQK",
                           "lastErrorAt": "2025-12-18T14:30:00.000Z",
                           "lastErrorCode": "NOT_FOUND",
@@ -20826,7 +20985,7 @@
                           "actorType": "user",
                           "userId": "user_9uzTzeSobgkd",
                           "orgId": "org_QgqAir1Eydfc",
-                          "username": "fashion_influencer",
+                          "username": "mrtechnicaldifficult",
                           "analyticsLatestLoadAt": null,
                           "orgAccountMaxVideos": 50,
                           "user": {
@@ -21300,14 +21459,17 @@
                         },
                         "platform": {
                           "enum": [
+                            "facebook",
                             "instagram",
                             "tiktok",
                             "youtube"
                           ],
-                          "description": "Social media platform (tiktok, instagram, youtube)",
+                          "type": "string",
+                          "description": "Social media platform (facebook, instagram, tiktok, youtube)",
                           "examples": [
-                            "tiktok",
+                            "facebook",
                             "instagram",
+                            "tiktok",
                             "youtube"
                           ]
                         },
@@ -21391,6 +21553,10 @@
                   {
                     "videos": [
                       {
+                        "videoId": "1487463749406225",
+                        "platform": "facebook"
+                      },
+                      {
                         "videoId": "74567890689123456789001",
                         "platform": "tiktok"
                       },
@@ -21436,11 +21602,12 @@
                   "description": "Result of adding tracked videos including count and sync job identifiers",
                   "examples": [
                     {
-                      "count": 3,
+                      "count": 4,
                       "eventIds": [
                         "01JGXKPQ9MNTV2R4W8KPMB5YT4",
                         "01JGXKPQ9MNTV2R4W8KPMB5YT5",
-                        "01JGXKPQ9MNTV2R4W8KPMB5YT6"
+                        "01JGXKPQ9MNTV2R4W8KPMB5YT6",
+                        "01JGXKPQ9MNTV2R4W8KPMB5YT7"
                       ]
                     }
                   ]
@@ -21506,14 +21673,17 @@
                                 "properties": {
                                   "platform": {
                                     "enum": [
+                                      "facebook",
                                       "instagram",
                                       "tiktok",
                                       "youtube"
                                     ],
-                                    "description": "Social media platform (tiktok, instagram, youtube)",
+                                    "type": "string",
+                                    "description": "Social media platform (facebook, instagram, tiktok, youtube)",
                                     "examples": [
-                                      "tiktok",
+                                      "facebook",
                                       "instagram",
+                                      "tiktok",
                                       "youtube"
                                     ]
                                   },
@@ -21528,7 +21698,8 @@
                                       "RATE_LIMITED",
                                       "UNKNOWN",
                                       "RESTRICTED"
-                                    ]
+                                    ],
+                                    "type": "string"
                                   },
                                   "message": {
                                     "type": "string"
@@ -21971,14 +22142,17 @@
                       "properties": {
                         "platform": {
                           "enum": [
+                            "facebook",
                             "instagram",
                             "tiktok",
                             "youtube"
                           ],
-                          "description": "Social media platform (tiktok, instagram, youtube)",
+                          "type": "string",
+                          "description": "Social media platform (facebook, instagram, tiktok, youtube)",
                           "examples": [
-                            "tiktok",
+                            "facebook",
                             "instagram",
+                            "tiktok",
                             "youtube"
                           ]
                         },
@@ -22006,6 +22180,10 @@
                 "examples": [
                   {
                     "items": [
+                      {
+                        "platform": "facebook",
+                        "id": "1487463749406225"
+                      },
                       {
                         "platform": "tiktok",
                         "id": "6768504823336815877"
@@ -22054,14 +22232,17 @@
                           },
                           "platform": {
                             "enum": [
+                              "facebook",
                               "instagram",
                               "tiktok",
                               "youtube"
                             ],
-                            "description": "Social media platform (tiktok, instagram, youtube)",
+                            "type": "string",
+                            "description": "Social media platform (facebook, instagram, tiktok, youtube)",
                             "examples": [
-                              "tiktok",
+                              "facebook",
                               "instagram",
+                              "tiktok",
                               "youtube"
                             ]
                           }
@@ -22086,6 +22267,11 @@
                     {
                       "refreshed": [
                         {
+                          "id": "orgvid_90qAFTH8K5Ca",
+                          "platformVideoId": "1487463749406225",
+                          "platform": "facebook"
+                        },
+                        {
                           "id": "orgvid_91rBGUI9L6Db",
                           "platformVideoId": "6768504823336815877",
                           "platform": "tiktok"
@@ -22101,7 +22287,7 @@
                           "platform": "youtube"
                         }
                       ],
-                      "totalRefreshed": 3
+                      "totalRefreshed": 4
                     }
                   ]
                 }
@@ -22600,6 +22786,7 @@
                 "asc",
                 "desc"
               ],
+              "type": "string",
               "default": "desc",
               "description": "Sort direction",
               "examples": [
@@ -22607,8 +22794,6 @@
                 "desc"
               ]
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           },
@@ -22701,7 +22886,8 @@
                               "user",
                               "system",
                               "api_token"
-                            ]
+                            ],
+                            "type": "string"
                           },
                           "userId": {
                             "type": "string"
@@ -22727,7 +22913,8 @@
                                   "competitor",
                                   "mixed",
                                   "none"
-                                ]
+                                ],
+                                "type": "string"
                               },
                               {
                                 "type": "null"
@@ -23556,7 +23743,8 @@
                         "user",
                         "system",
                         "api_token"
-                      ]
+                      ],
+                      "type": "string"
                     },
                     "userId": {
                       "type": "string"
@@ -24275,7 +24463,8 @@
                         "user",
                         "system",
                         "api_token"
-                      ]
+                      ],
+                      "type": "string"
                     },
                     "userId": {
                       "type": "string"
@@ -27303,7 +27492,8 @@
                     "lastName",
                     "createdAt",
                     "updatedAt"
-                  ]
+                  ],
+                  "type": "string"
                 },
                 {
                   "type": "string"
@@ -27318,8 +27508,6 @@
                 "createdAt"
               ]
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           },
@@ -27331,6 +27519,7 @@
                 "asc",
                 "desc"
               ],
+              "type": "string",
               "default": "desc",
               "description": "Sort direction",
               "examples": [
@@ -27338,8 +27527,6 @@
                 "desc"
               ]
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           },
@@ -27376,7 +27563,8 @@
                 "enum": [
                   "active",
                   "archived"
-                ]
+                ],
+                "type": "string"
               }
             },
             "style": "deepObject",
@@ -27441,7 +27629,8 @@
                               "user",
                               "system",
                               "api_token"
-                            ]
+                            ],
+                            "type": "string"
                           },
                           "userId": {
                             "type": "string"
@@ -27800,7 +27989,8 @@
                                       "accepted",
                                       "rejected",
                                       "canceled"
-                                    ]
+                                    ],
+                                    "type": "string"
                                   }
                                 },
                                 "required": [
@@ -27820,13 +28010,15 @@
                               "invitation sent",
                               "invitation rejected",
                               "joined"
-                            ]
+                            ],
+                            "type": "string"
                           },
                           "creatorStatus": {
                             "enum": [
                               "active",
                               "archived"
-                            ]
+                            ],
+                            "type": "string"
                           },
                           "accounts": {
                             "type": "array",
@@ -27838,10 +28030,12 @@
                                 },
                                 "platform": {
                                   "enum": [
+                                    "facebook",
                                     "instagram",
                                     "tiktok",
                                     "youtube"
-                                  ]
+                                  ],
+                                  "type": "string"
                                 },
                                 "platformAccountId": {
                                   "type": "string"
@@ -27851,6 +28045,16 @@
                                   "default": false
                                 },
                                 "username": {
+                                  "anyOf": [
+                                    {
+                                      "type": "string"
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ]
+                                },
+                                "displayName": {
                                   "anyOf": [
                                     {
                                       "type": "string"
@@ -27919,6 +28123,7 @@
                                       "closing",
                                       "ended"
                                     ],
+                                    "type": "string",
                                     "description": "Campaign lifecycle status derived from validity window. upcoming: validFrom in the future; active: started with no end date; closing: started and has an end date in the present/future; ended: end date is in the past.",
                                     "examples": [
                                       "active",
@@ -27933,7 +28138,8 @@
                                           "EUR",
                                           "CHF",
                                           "GBP"
-                                        ]
+                                        ],
+                                        "type": "string"
                                       },
                                       {
                                         "type": "null"
@@ -28005,7 +28211,8 @@
                                       "day",
                                       "week",
                                       "month"
-                                    ]
+                                    ],
+                                    "type": "string"
                                   },
                                   "intervalCount": {
                                     "type": "integer",
@@ -28016,7 +28223,8 @@
                                     "enum": [
                                       "rolling",
                                       "fixed"
-                                    ]
+                                    ],
+                                    "type": "string"
                                   },
                                   "description": {
                                     "anyOf": [
@@ -29131,7 +29339,8 @@
                 "enum": [
                   "active",
                   "archived"
-                ]
+                ],
+                "type": "string"
               }
             },
             "style": "deepObject",
@@ -29657,7 +29866,8 @@
                             "user",
                             "system",
                             "api_token"
-                          ]
+                          ],
+                          "type": "string"
                         },
                         "userId": {
                           "type": "string"
@@ -30016,7 +30226,8 @@
                                     "accepted",
                                     "rejected",
                                     "canceled"
-                                  ]
+                                  ],
+                                  "type": "string"
                                 }
                               },
                               "required": [
@@ -30036,13 +30247,15 @@
                             "invitation sent",
                             "invitation rejected",
                             "joined"
-                          ]
+                          ],
+                          "type": "string"
                         },
                         "creatorStatus": {
                           "enum": [
                             "active",
                             "archived"
-                          ]
+                          ],
+                          "type": "string"
                         },
                         "accounts": {
                           "type": "array",
@@ -30054,10 +30267,12 @@
                               },
                               "platform": {
                                 "enum": [
+                                  "facebook",
                                   "instagram",
                                   "tiktok",
                                   "youtube"
-                                ]
+                                ],
+                                "type": "string"
                               },
                               "platformAccountId": {
                                 "type": "string"
@@ -30067,6 +30282,16 @@
                                 "default": false
                               },
                               "username": {
+                                "anyOf": [
+                                  {
+                                    "type": "string"
+                                  },
+                                  {
+                                    "type": "null"
+                                  }
+                                ]
+                              },
+                              "displayName": {
                                 "anyOf": [
                                   {
                                     "type": "string"
@@ -30135,6 +30360,7 @@
                                     "closing",
                                     "ended"
                                   ],
+                                  "type": "string",
                                   "description": "Campaign lifecycle status derived from validity window. upcoming: validFrom in the future; active: started with no end date; closing: started and has an end date in the present/future; ended: end date is in the past.",
                                   "examples": [
                                     "active",
@@ -30149,7 +30375,8 @@
                                         "EUR",
                                         "CHF",
                                         "GBP"
-                                      ]
+                                      ],
+                                      "type": "string"
                                     },
                                     {
                                       "type": "null"
@@ -30221,7 +30448,8 @@
                                     "day",
                                     "week",
                                     "month"
-                                  ]
+                                  ],
+                                  "type": "string"
                                 },
                                 "intervalCount": {
                                   "type": "integer",
@@ -30232,7 +30460,8 @@
                                   "enum": [
                                     "rolling",
                                     "fixed"
-                                  ]
+                                  ],
+                                  "type": "string"
                                 },
                                 "description": {
                                   "anyOf": [
@@ -33292,7 +33521,8 @@
                       "current",
                       "next",
                       "custom"
-                    ]
+                    ],
+                    "type": "string"
                   },
                   "startDate": {
                     "type": "string",
@@ -34040,7 +34270,8 @@
                       "current",
                       "next",
                       "custom"
-                    ]
+                    ],
+                    "type": "string"
                   },
                   "endDate": {
                     "type": "string",
@@ -35905,6 +36136,7 @@
                   "closing",
                   "ended"
                 ],
+                "type": "string",
                 "description": "Campaign lifecycle status derived from validity window. upcoming: validFrom in the future; active: started with no end date; closing: started and has an end date in the present/future; ended: end date is in the past.",
                 "examples": [
                   "active",
@@ -36413,6 +36645,7 @@
                   "closing",
                   "ended"
                 ],
+                "type": "string",
                 "description": "Campaign lifecycle status derived from validity window. upcoming: validFrom in the future; active: started with no end date; closing: started and has an end date in the present/future; ended: end date is in the past.",
                 "examples": [
                   "active",
@@ -36491,6 +36724,41 @@
             },
             "allowEmptyValue": true,
             "allowReserved": true
+          },
+          {
+            "name": "sortCol",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": "publishedAt",
+              "description": "Sort column",
+              "examples": [
+                "publishedAt",
+                "viewCount",
+                "engagementRate"
+              ]
+            },
+            "allowEmptyValue": true,
+            "allowReserved": true
+          },
+          {
+            "name": "sortDir",
+            "in": "query",
+            "schema": {
+              "enum": [
+                "asc",
+                "desc"
+              ],
+              "type": "string",
+              "default": "desc",
+              "description": "Sort direction",
+              "examples": [
+                "asc",
+                "desc"
+              ]
+            },
+            "allowEmptyValue": true,
+            "allowReserved": true
           }
         ],
         "responses": {
@@ -36533,14 +36801,16 @@
                               "EUR",
                               "CHF",
                               "GBP"
-                            ]
+                            ],
+                            "type": "string"
                           },
                           "interval": {
                             "enum": [
                               "day",
                               "week",
                               "month"
-                            ]
+                            ],
+                            "type": "string"
                           },
                           "intervalCount": {
                             "type": "integer",
@@ -36552,12 +36822,14 @@
                             "enum": [
                               "rolling",
                               "fixed"
-                            ]
+                            ],
+                            "type": "string"
                           },
                           "timeZone": {
                             "enum": [
                               "UTC"
-                            ]
+                            ],
+                            "type": "string"
                           },
                           "videoTarget": {
                             "type": "integer",
@@ -36589,6 +36861,7 @@
                               "closing",
                               "ended"
                             ],
+                            "type": "string",
                             "description": "Campaign lifecycle status derived from validity window. upcoming: validFrom in the future; active: started with no end date; closing: started and has an end date in the present/future; ended: end date is in the past.",
                             "examples": [
                               "active",
@@ -36620,7 +36893,8 @@
                               "user",
                               "system",
                               "api_token"
-                            ]
+                            ],
+                            "type": "string"
                           },
                           "rules": {
                             "type": "array",
@@ -36844,14 +37118,17 @@
                                           },
                                           "platform": {
                                             "enum": [
+                                              "facebook",
                                               "instagram",
                                               "tiktok",
                                               "youtube"
                                             ],
-                                            "description": "Social media platform (tiktok, instagram, youtube)",
+                                            "type": "string",
+                                            "description": "Social media platform (facebook, instagram, tiktok, youtube)",
                                             "examples": [
-                                              "tiktok",
+                                              "facebook",
                                               "instagram",
+                                              "tiktok",
                                               "youtube"
                                             ]
                                           },
@@ -36982,14 +37259,17 @@
                                           },
                                           "platform": {
                                             "enum": [
+                                              "facebook",
                                               "instagram",
                                               "tiktok",
                                               "youtube"
                                             ],
-                                            "description": "Social media platform (tiktok, instagram, youtube)",
+                                            "type": "string",
+                                            "description": "Social media platform (facebook, instagram, tiktok, youtube)",
                                             "examples": [
-                                              "tiktok",
+                                              "facebook",
                                               "instagram",
+                                              "tiktok",
                                               "youtube"
                                             ]
                                           },
@@ -37559,10 +37839,9 @@
                 "dateRange",
                 "allTime"
               ],
+              "type": "string",
               "default": "dateRange"
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           },
@@ -37648,10 +37927,9 @@
               "enum": [
                 "allEligible",
                 "onlyPublished"
-              ]
+              ],
+              "type": "string"
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           }
@@ -38434,10 +38712,9 @@
                 "targetVideos",
                 "progressRatio"
               ],
+              "type": "string",
               "default": "progressRatio"
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           },
@@ -38450,10 +38727,9 @@
                 "asc",
                 "desc"
               ],
+              "type": "string",
               "default": "desc"
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           },
@@ -38467,10 +38743,9 @@
                 "behind",
                 "onTrack"
               ],
+              "type": "string",
               "default": "all"
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           },
@@ -38483,10 +38758,9 @@
                 "dateRange",
                 "allTime"
               ],
+              "type": "string",
               "default": "dateRange"
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           },
@@ -38572,10 +38846,9 @@
               "enum": [
                 "allEligible",
                 "onlyPublished"
-              ]
+              ],
+              "type": "string"
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           }
@@ -38648,10 +38921,12 @@
                                 },
                                 "platform": {
                                   "enum": [
+                                    "facebook",
                                     "instagram",
                                     "tiktok",
                                     "youtube"
-                                  ]
+                                  ],
+                                  "type": "string"
                                 },
                                 "platformAccountId": {
                                   "type": "string"
@@ -38661,6 +38936,16 @@
                                   "default": false
                                 },
                                 "username": {
+                                  "anyOf": [
+                                    {
+                                      "type": "string"
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ]
+                                },
+                                "displayName": {
                                   "anyOf": [
                                     {
                                       "type": "string"
@@ -38710,14 +38995,16 @@
                                   "EUR",
                                   "CHF",
                                   "GBP"
-                                ]
+                                ],
+                                "type": "string"
                               },
                               "interval": {
                                 "enum": [
                                   "day",
                                   "week",
                                   "month"
-                                ]
+                                ],
+                                "type": "string"
                               },
                               "intervalCount": {
                                 "type": "integer",
@@ -38740,7 +39027,8 @@
                                 "enum": [
                                   "fixed",
                                   "rolling"
-                                ]
+                                ],
+                                "type": "string"
                               },
                               "status": {
                                 "enum": [
@@ -38749,6 +39037,7 @@
                                   "closing",
                                   "ended"
                                 ],
+                                "type": "string",
                                 "description": "Campaign lifecycle status derived from validity window. upcoming: validFrom in the future; active: started with no end date; closing: started and has an end date in the present/future; ended: end date is in the past.",
                                 "examples": [
                                   "active",
@@ -38850,14 +39139,17 @@
                                 "properties": {
                                   "platform": {
                                     "enum": [
+                                      "facebook",
                                       "instagram",
                                       "tiktok",
                                       "youtube"
                                     ],
-                                    "description": "Social media platform (tiktok, instagram, youtube)",
+                                    "type": "string",
+                                    "description": "Social media platform (facebook, instagram, tiktok, youtube)",
                                     "examples": [
-                                      "tiktok",
+                                      "facebook",
                                       "instagram",
+                                      "tiktok",
                                       "youtube"
                                     ]
                                   },
@@ -38907,6 +39199,7 @@
                                           "video",
                                           "slideshow"
                                         ],
+                                        "type": "string",
                                         "description": "Filter by content types (video, slideshow)",
                                         "examples": [
                                           [
@@ -39544,10 +39837,9 @@
                 "engagementRate",
                 "viralityRate"
               ],
+              "type": "string",
               "default": "totalViews"
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           },
@@ -39560,10 +39852,9 @@
                 "asc",
                 "desc"
               ],
+              "type": "string",
               "default": "desc"
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           },
@@ -39576,10 +39867,9 @@
                 "dateRange",
                 "allTime"
               ],
+              "type": "string",
               "default": "dateRange"
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           },
@@ -39665,10 +39955,9 @@
               "enum": [
                 "allEligible",
                 "onlyPublished"
-              ]
+              ],
+              "type": "string"
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           }
@@ -39741,10 +40030,12 @@
                                 },
                                 "platform": {
                                   "enum": [
+                                    "facebook",
                                     "instagram",
                                     "tiktok",
                                     "youtube"
-                                  ]
+                                  ],
+                                  "type": "string"
                                 },
                                 "platformAccountId": {
                                   "type": "string"
@@ -39754,6 +40045,16 @@
                                   "default": false
                                 },
                                 "username": {
+                                  "anyOf": [
+                                    {
+                                      "type": "string"
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ]
+                                },
+                                "displayName": {
                                   "anyOf": [
                                     {
                                       "type": "string"
@@ -39803,14 +40104,16 @@
                                   "EUR",
                                   "CHF",
                                   "GBP"
-                                ]
+                                ],
+                                "type": "string"
                               },
                               "interval": {
                                 "enum": [
                                   "day",
                                   "week",
                                   "month"
-                                ]
+                                ],
+                                "type": "string"
                               },
                               "intervalCount": {
                                 "type": "integer",
@@ -39822,7 +40125,8 @@
                                 "enum": [
                                   "fixed",
                                   "rolling"
-                                ]
+                                ],
+                                "type": "string"
                               },
                               "status": {
                                 "enum": [
@@ -39831,6 +40135,7 @@
                                   "closing",
                                   "ended"
                                 ],
+                                "type": "string",
                                 "description": "Campaign lifecycle status derived from validity window. upcoming: validFrom in the future; active: started with no end date; closing: started and has an end date in the present/future; ended: end date is in the past.",
                                 "examples": [
                                   "active",
@@ -39901,14 +40206,17 @@
                                 "properties": {
                                   "platform": {
                                     "enum": [
+                                      "facebook",
                                       "instagram",
                                       "tiktok",
                                       "youtube"
                                     ],
-                                    "description": "Social media platform (tiktok, instagram, youtube)",
+                                    "type": "string",
+                                    "description": "Social media platform (facebook, instagram, tiktok, youtube)",
                                     "examples": [
-                                      "tiktok",
+                                      "facebook",
                                       "instagram",
+                                      "tiktok",
                                       "youtube"
                                     ]
                                   },
@@ -39958,6 +40266,7 @@
                                           "video",
                                           "slideshow"
                                         ],
+                                        "type": "string",
                                         "description": "Filter by content types (video, slideshow)",
                                         "examples": [
                                           [
@@ -40605,10 +40914,9 @@
                 "dateRange",
                 "allTime"
               ],
+              "type": "string",
               "default": "dateRange"
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           },
@@ -40694,10 +41002,9 @@
               "enum": [
                 "allEligible",
                 "onlyPublished"
-              ]
+              ],
+              "type": "string"
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           },
@@ -40711,10 +41018,9 @@
                 "campaign",
                 "videos"
               ],
+              "type": "string",
               "default": "all"
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           }
@@ -40761,6 +41067,7 @@
                                       "closing",
                                       "ended"
                                     ],
+                                    "type": "string",
                                     "description": "Campaign lifecycle status derived from validity window. upcoming: validFrom in the future; active: started with no end date; closing: started and has an end date in the present/future; ended: end date is in the past.",
                                     "examples": [
                                       "active",
@@ -40830,6 +41137,7 @@
                                       "closing",
                                       "ended"
                                     ],
+                                    "type": "string",
                                     "description": "Campaign lifecycle status derived from validity window. upcoming: validFrom in the future; active: started with no end date; closing: started and has an end date in the present/future; ended: end date is in the past.",
                                     "examples": [
                                       "active",
@@ -40899,6 +41207,7 @@
                                       "closing",
                                       "ended"
                                     ],
+                                    "type": "string",
                                     "description": "Campaign lifecycle status derived from validity window. upcoming: validFrom in the future; active: started with no end date; closing: started and has an end date in the present/future; ended: end date is in the past.",
                                     "examples": [
                                       "active",
@@ -40968,6 +41277,7 @@
                                       "closing",
                                       "ended"
                                     ],
+                                    "type": "string",
                                     "description": "Campaign lifecycle status derived from validity window. upcoming: validFrom in the future; active: started with no end date; closing: started and has an end date in the present/future; ended: end date is in the past.",
                                     "examples": [
                                       "active",
@@ -41072,6 +41382,7 @@
                                       "closing",
                                       "ended"
                                     ],
+                                    "type": "string",
                                     "description": "Campaign lifecycle status derived from validity window. upcoming: validFrom in the future; active: started with no end date; closing: started and has an end date in the present/future; ended: end date is in the past.",
                                     "examples": [
                                       "active",
@@ -41176,6 +41487,7 @@
                                       "closing",
                                       "ended"
                                     ],
+                                    "type": "string",
                                     "description": "Campaign lifecycle status derived from validity window. upcoming: validFrom in the future; active: started with no end date; closing: started and has an end date in the present/future; ended: end date is in the past.",
                                     "examples": [
                                       "active",
@@ -41246,14 +41558,17 @@
                                 "properties": {
                                   "platform": {
                                     "enum": [
+                                      "facebook",
                                       "instagram",
                                       "tiktok",
                                       "youtube"
                                     ],
-                                    "description": "Social media platform (tiktok, instagram, youtube)",
+                                    "type": "string",
+                                    "description": "Social media platform (facebook, instagram, tiktok, youtube)",
                                     "examples": [
-                                      "tiktok",
+                                      "facebook",
                                       "instagram",
+                                      "tiktok",
                                       "youtube"
                                     ]
                                   },
@@ -41307,6 +41622,7 @@
                                       "closing",
                                       "ended"
                                     ],
+                                    "type": "string",
                                     "description": "Campaign lifecycle status derived from validity window. upcoming: validFrom in the future; active: started with no end date; closing: started and has an end date in the present/future; ended: end date is in the past.",
                                     "examples": [
                                       "active",
@@ -41352,7 +41668,8 @@
                                       "day",
                                       "week",
                                       "month"
-                                    ]
+                                    ],
+                                    "type": "string"
                                   },
                                   "intervalCount": {
                                     "type": "integer",
@@ -41364,7 +41681,8 @@
                                     "enum": [
                                       "fixed",
                                       "rolling"
-                                    ]
+                                    ],
+                                    "type": "string"
                                   },
                                   "index": {
                                     "type": "integer",
@@ -41419,6 +41737,7 @@
                                       "closing",
                                       "ended"
                                     ],
+                                    "type": "string",
                                     "description": "Campaign lifecycle status derived from validity window. upcoming: validFrom in the future; active: started with no end date; closing: started and has an end date in the present/future; ended: end date is in the past.",
                                     "examples": [
                                       "active",
@@ -41464,7 +41783,8 @@
                                       "day",
                                       "week",
                                       "month"
-                                    ]
+                                    ],
+                                    "type": "string"
                                   },
                                   "intervalCount": {
                                     "type": "integer",
@@ -41476,7 +41796,8 @@
                                     "enum": [
                                       "fixed",
                                       "rolling"
-                                    ]
+                                    ],
+                                    "type": "string"
                                   },
                                   "index": {
                                     "type": "integer",
@@ -41531,6 +41852,7 @@
                                       "closing",
                                       "ended"
                                     ],
+                                    "type": "string",
                                     "description": "Campaign lifecycle status derived from validity window. upcoming: validFrom in the future; active: started with no end date; closing: started and has an end date in the present/future; ended: end date is in the past.",
                                     "examples": [
                                       "active",
@@ -41628,7 +41950,8 @@
                                       "EUR",
                                       "CHF",
                                       "GBP"
-                                    ]
+                                    ],
+                                    "type": "string"
                                   },
                                   "billingPeriodStart": {
                                     "type": "string"
@@ -41685,6 +42008,7 @@
                                       "closing",
                                       "ended"
                                     ],
+                                    "type": "string",
                                     "description": "Campaign lifecycle status derived from validity window. upcoming: validFrom in the future; active: started with no end date; closing: started and has an end date in the present/future; ended: end date is in the past.",
                                     "examples": [
                                       "active",
@@ -41782,7 +42106,8 @@
                                       "EUR",
                                       "CHF",
                                       "GBP"
-                                    ]
+                                    ],
+                                    "type": "string"
                                   },
                                   "billingPeriodStart": {
                                     "type": "string"
@@ -42338,7 +42663,8 @@
                   "due",
                   "canceled",
                   "paid"
-                ]
+                ],
+                "type": "string"
               }
             },
             "style": "deepObject",
@@ -42882,6 +43208,7 @@
                 "asc",
                 "desc"
               ],
+              "type": "string",
               "default": "desc",
               "description": "Sort direction",
               "examples": [
@@ -42889,8 +43216,6 @@
                 "desc"
               ]
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           },
@@ -42930,16 +43255,25 @@
             "allowReserved": true
           },
           {
+            "name": "includeEmpty",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            },
+            "allowEmptyValue": true,
+            "allowReserved": true
+          },
+          {
             "name": "mode",
             "in": "query",
             "schema": {
               "enum": [
                 "data",
                 "count"
-              ]
+              ],
+              "type": "string"
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           },
@@ -43029,10 +43363,12 @@
                                 },
                                 "platform": {
                                   "enum": [
+                                    "facebook",
                                     "instagram",
                                     "tiktok",
                                     "youtube"
-                                  ]
+                                  ],
+                                  "type": "string"
                                 },
                                 "platformAccountId": {
                                   "type": "string"
@@ -43042,6 +43378,16 @@
                                   "default": false
                                 },
                                 "username": {
+                                  "anyOf": [
+                                    {
+                                      "type": "string"
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ]
+                                },
+                                "displayName": {
                                   "anyOf": [
                                     {
                                       "type": "string"
@@ -43068,6 +43414,7 @@
                               "closing",
                               "ended"
                             ],
+                            "type": "string",
                             "description": "Campaign lifecycle status derived from validity window. upcoming: validFrom in the future; active: started with no end date; closing: started and has an end date in the present/future; ended: end date is in the past.",
                             "examples": [
                               "active",
@@ -43107,7 +43454,8 @@
                               "day",
                               "week",
                               "month"
-                            ]
+                            ],
+                            "type": "string"
                           },
                           "intervalCount": {
                             "type": "integer",
@@ -43119,12 +43467,14 @@
                             "enum": [
                               "fixed",
                               "rolling"
-                            ]
+                            ],
+                            "type": "string"
                           },
                           "timeZone": {
                             "enum": [
                               "UTC"
-                            ]
+                            ],
+                            "type": "string"
                           },
                           "currency": {
                             "enum": [
@@ -43132,7 +43482,8 @@
                               "EUR",
                               "CHF",
                               "GBP"
-                            ]
+                            ],
+                            "type": "string"
                           },
                           "payoutAmount": {
                             "anyOf": [
@@ -43166,7 +43517,8 @@
                                   "EUR",
                                   "CHF",
                                   "GBP"
-                                ]
+                                ],
+                                "type": "string"
                               },
                               {
                                 "type": "null"
@@ -43655,7 +44007,7 @@
       "post": {
         "operationId": "payouts.calculate",
         "summary": "Calculate payout details",
-        "description": "Runs the payout engine for a specific creator and billing window, returning full calculation details.",
+        "description": "Runs the payout engine for a specific creator and billing window, returning the finalized calculation payload, the default server-generated line items, and an `integrityToken`. Use the returned `calculation` plus `integrityToken` as the basis for `POST /payouts/initiate` when you need custom line items.",
         "tags": [
           "Creator Hub"
         ],
@@ -43784,7 +44136,8 @@
                                   "flat",
                                   "rate",
                                   "rate_min_max"
-                                ]
+                                ],
+                                "type": "string"
                               },
                               "amount": {
                                 "type": "number"
@@ -43840,13 +44193,15 @@
                                         "enum": [
                                           "allocation",
                                           "progressive"
-                                        ]
+                                        ],
+                                        "type": "string"
                                       },
                                       "payoutTiming": {
                                         "enum": [
                                           "gains",
                                           "milestone"
-                                        ]
+                                        ],
+                                        "type": "string"
                                       },
                                       "appliedTierIndex": {
                                         "type": "integer",
@@ -44000,7 +44355,8 @@
                                   "comments",
                                   "videoCount",
                                   "engagementRate"
-                                ]
+                                ],
+                                "type": "string"
                               },
                               "label": {
                                 "type": "string"
@@ -44030,7 +44386,8 @@
                                     "comments",
                                     "videoCount",
                                     "engagementRate"
-                                  ]
+                                  ],
+                                  "type": "string"
                                 },
                                 "label": {
                                   "type": "string"
@@ -44052,14 +44409,17 @@
                                       },
                                       "platform": {
                                         "enum": [
+                                          "facebook",
                                           "instagram",
                                           "tiktok",
                                           "youtube"
                                         ],
-                                        "description": "Social media platform (tiktok, instagram, youtube)",
+                                        "type": "string",
+                                        "description": "Social media platform (facebook, instagram, tiktok, youtube)",
                                         "examples": [
-                                          "tiktok",
+                                          "facebook",
                                           "instagram",
+                                          "tiktok",
                                           "youtube"
                                         ]
                                       },
@@ -44129,6 +44489,7 @@
                                               "video",
                                               "slideshow"
                                             ],
+                                            "type": "string",
                                             "description": "Filter by content types (video, slideshow)",
                                             "examples": [
                                               [
@@ -44237,7 +44598,8 @@
                                       "comments",
                                       "videoCount",
                                       "engagementRate"
-                                    ]
+                                    ],
+                                    "type": "string"
                                   },
                                   "metricKey": {
                                     "type": "string"
@@ -44262,14 +44624,17 @@
                                         },
                                         "platform": {
                                           "enum": [
+                                            "facebook",
                                             "instagram",
                                             "tiktok",
                                             "youtube"
                                           ],
-                                          "description": "Social media platform (tiktok, instagram, youtube)",
+                                          "type": "string",
+                                          "description": "Social media platform (facebook, instagram, tiktok, youtube)",
                                           "examples": [
-                                            "tiktok",
+                                            "facebook",
                                             "instagram",
+                                            "tiktok",
                                             "youtube"
                                           ]
                                         },
@@ -44339,6 +44704,7 @@
                                                 "video",
                                                 "slideshow"
                                               ],
+                                              "type": "string",
                                               "description": "Filter by content types (video, slideshow)",
                                               "examples": [
                                                 [
@@ -44478,7 +44844,8 @@
                                                     "lessThanInclusive",
                                                     "greaterThan",
                                                     "greaterThanInclusive"
-                                                  ]
+                                                  ],
+                                                  "type": "string"
                                                 },
                                                 "value": {
                                                   "type": "number"
@@ -44501,7 +44868,8 @@
                                                   "enum": [
                                                     "equal",
                                                     "notEqual"
-                                                  ]
+                                                  ],
+                                                  "type": "string"
                                                 },
                                                 "value": {
                                                   "anyOf": [
@@ -44536,7 +44904,8 @@
                                                     "notIn",
                                                     "contains",
                                                     "doesNotContain"
-                                                  ]
+                                                  ],
+                                                  "type": "string"
                                                 },
                                                 "value": {
                                                   "type": "array",
@@ -44599,7 +44968,8 @@
                                                     "lessThanInclusive",
                                                     "greaterThan",
                                                     "greaterThanInclusive"
-                                                  ]
+                                                  ],
+                                                  "type": "string"
                                                 },
                                                 "value": {
                                                   "type": "number"
@@ -44622,7 +44992,8 @@
                                                   "enum": [
                                                     "equal",
                                                     "notEqual"
-                                                  ]
+                                                  ],
+                                                  "type": "string"
                                                 },
                                                 "value": {
                                                   "anyOf": [
@@ -44657,7 +45028,8 @@
                                                     "notIn",
                                                     "contains",
                                                     "doesNotContain"
-                                                  ]
+                                                  ],
+                                                  "type": "string"
                                                 },
                                                 "value": {
                                                   "type": "array",
@@ -44985,7 +45357,8 @@
                                                       "count",
                                                       "min",
                                                       "max"
-                                                    ]
+                                                    ],
+                                                    "type": "string"
                                                   },
                                                   "as": {
                                                     "type": "string",
@@ -45096,13 +45469,15 @@
                                                 "enum": [
                                                   "progressive",
                                                   "allocation"
-                                                ]
+                                                ],
+                                                "type": "string"
                                               },
                                               "payoutTiming": {
                                                 "enum": [
                                                   "gains",
                                                   "milestone"
-                                                ]
+                                                ],
+                                                "type": "string"
                                               },
                                               "tierIndex": {
                                                 "type": "integer",
@@ -45190,7 +45565,8 @@
                                                   "count",
                                                   "min",
                                                   "max"
-                                                ]
+                                                ],
+                                                "type": "string"
                                               },
                                               "as": {
                                                 "type": "string",
@@ -45264,7 +45640,8 @@
                                                       "enum": [
                                                         "asc",
                                                         "desc"
-                                                      ]
+                                                      ],
+                                                      "type": "string"
                                                     }
                                                   },
                                                   "required": [
@@ -45331,7 +45708,8 @@
                                                         "left",
                                                         "right",
                                                         "full"
-                                                      ]
+                                                      ],
+                                                      "type": "string"
                                                     }
                                                   },
                                                   "required": [
@@ -45368,7 +45746,8 @@
                                             "enum": [
                                               "allocation",
                                               "progressive"
-                                            ]
+                                            ],
+                                            "type": "string"
                                           },
                                           "tierIndex": {
                                             "type": "integer",
@@ -45441,7 +45820,8 @@
                                                   "count",
                                                   "min",
                                                   "max"
-                                                ]
+                                                ],
+                                                "type": "string"
                                               },
                                               "as": {
                                                 "type": "string",
@@ -45515,7 +45895,8 @@
                                                       "enum": [
                                                         "asc",
                                                         "desc"
-                                                      ]
+                                                      ],
+                                                      "type": "string"
                                                     }
                                                   },
                                                   "required": [
@@ -45582,7 +45963,8 @@
                                                         "left",
                                                         "right",
                                                         "full"
-                                                      ]
+                                                      ],
+                                                      "type": "string"
                                                     }
                                                   },
                                                   "required": [
@@ -45632,7 +46014,8 @@
                                             "enum": [
                                               "allocation",
                                               "progressive"
-                                            ]
+                                            ],
+                                            "type": "string"
                                           },
                                           "tierIndex": {
                                             "type": "integer",
@@ -45712,7 +46095,8 @@
                                       "count",
                                       "min",
                                       "max"
-                                    ]
+                                    ],
+                                    "type": "string"
                                   },
                                   "as": {
                                     "type": "string",
@@ -45747,7 +46131,8 @@
                                                 "like",
                                                 "ilike",
                                                 "between"
-                                              ]
+                                              ],
+                                              "type": "string"
                                             },
                                             "column": {
                                               "type": "string",
@@ -45800,7 +46185,8 @@
                                                 "like",
                                                 "ilike",
                                                 "between"
-                                              ]
+                                              ],
+                                              "type": "string"
                                             },
                                             "column": {
                                               "type": "string",
@@ -45846,7 +46232,8 @@
                                           "enum": [
                                             "asc",
                                             "desc"
-                                          ]
+                                          ],
+                                          "type": "string"
                                         }
                                       },
                                       "required": [
@@ -45939,7 +46326,8 @@
                                             "left",
                                             "right",
                                             "full"
-                                          ]
+                                          ],
+                                          "type": "string"
                                         }
                                       },
                                       "required": [
@@ -46048,13 +46436,15 @@
                                   "flat",
                                   "rate",
                                   "rate_min_max"
-                                ]
+                                ],
+                                "type": "string"
                               },
                               "source": {
                                 "enum": [
                                   "global",
                                   "query"
-                                ]
+                                ],
+                                "type": "string"
                               },
                               "queryHash": {
                                 "type": "string"
@@ -46170,13 +46560,15 @@
                                         "enum": [
                                           "allocation",
                                           "progressive"
-                                        ]
+                                        ],
+                                        "type": "string"
                                       },
                                       "payoutTiming": {
                                         "enum": [
                                           "gains",
                                           "milestone"
-                                        ]
+                                        ],
+                                        "type": "string"
                                       },
                                       "appliedTierIndex": {
                                         "type": "integer",
@@ -46333,7 +46725,8 @@
                                   "day",
                                   "week",
                                   "month"
-                                ]
+                                ],
+                                "type": "string"
                               },
                               "intervalCount": {
                                 "type": "integer",
@@ -46398,14 +46791,17 @@
                                   },
                                   "platform": {
                                     "enum": [
+                                      "facebook",
                                       "instagram",
                                       "tiktok",
                                       "youtube"
                                     ],
-                                    "description": "Social media platform (tiktok, instagram, youtube)",
+                                    "type": "string",
+                                    "description": "Social media platform (facebook, instagram, tiktok, youtube)",
                                     "examples": [
-                                      "tiktok",
+                                      "facebook",
                                       "instagram",
+                                      "tiktok",
                                       "youtube"
                                     ]
                                   },
@@ -46472,13 +46868,41 @@
                         "engineWarnings",
                         "accountSnapshot"
                       ]
+                    },
+                    "lineItems": {
+                      "type": "array",
+                      "minItems": 1,
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "title": {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 200
+                          },
+                          "amount": {
+                            "type": "number"
+                          }
+                        },
+                        "required": [
+                          "title",
+                          "amount"
+                        ]
+                      }
+                    },
+                    "integrityToken": {
+                      "type": "string",
+                      "minLength": 1,
+                      "description": "Integrity token returned alongside the calculation. Pass it unchanged to POST /payouts/initiate together with the calculation payload."
                     }
                   },
                   "required": [
                     "period",
                     "payouts",
                     "metrics",
-                    "engine"
+                    "engine",
+                    "lineItems",
+                    "integrityToken"
                   ]
                 }
               }
@@ -46911,7 +47335,7 @@
       "post": {
         "operationId": "payouts.initiate",
         "summary": "Initiate a payout",
-        "description": "Stores the finalized payout calculation, engine metadata, and invoice line items for a completed billing window.",
+        "description": "Stores the finalized payout calculation, engine metadata, and caller-supplied invoice line items for a completed billing window. Call `POST /payouts/calculate` first and pass the returned `calculation` payload plus `integrityToken` here. `autoApproveTalentir=true` is only valid with `payoutProvider=\"talentir\"` and also requires `acknowledgeFullPayoutLiability=true`, confirming that your API caller accepts full responsibility for any payout approval, calculation, recipient, configuration, or integration errors triggered by the request, including any resulting lost funds.",
         "tags": [
           "Creator Hub"
         ],
@@ -46946,12 +47370,14 @@
                   "lineItems": {
                     "type": "array",
                     "minItems": 1,
+                    "maxItems": 50,
                     "items": {
                       "type": "object",
                       "properties": {
                         "title": {
                           "type": "string",
-                          "minLength": 1
+                          "minLength": 1,
+                          "maxLength": 200
                         },
                         "amount": {
                           "type": "number"
@@ -47044,7 +47470,8 @@
                                     "flat",
                                     "rate",
                                     "rate_min_max"
-                                  ]
+                                  ],
+                                  "type": "string"
                                 },
                                 "amount": {
                                   "type": "number"
@@ -47100,13 +47527,15 @@
                                           "enum": [
                                             "allocation",
                                             "progressive"
-                                          ]
+                                          ],
+                                          "type": "string"
                                         },
                                         "payoutTiming": {
                                           "enum": [
                                             "gains",
                                             "milestone"
-                                          ]
+                                          ],
+                                          "type": "string"
                                         },
                                         "appliedTierIndex": {
                                           "type": "integer",
@@ -47260,7 +47689,8 @@
                                     "comments",
                                     "videoCount",
                                     "engagementRate"
-                                  ]
+                                  ],
+                                  "type": "string"
                                 },
                                 "label": {
                                   "type": "string"
@@ -47290,7 +47720,8 @@
                                       "comments",
                                       "videoCount",
                                       "engagementRate"
-                                    ]
+                                    ],
+                                    "type": "string"
                                   },
                                   "label": {
                                     "type": "string"
@@ -47312,14 +47743,17 @@
                                         },
                                         "platform": {
                                           "enum": [
+                                            "facebook",
                                             "instagram",
                                             "tiktok",
                                             "youtube"
                                           ],
-                                          "description": "Social media platform (tiktok, instagram, youtube)",
+                                          "type": "string",
+                                          "description": "Social media platform (facebook, instagram, tiktok, youtube)",
                                           "examples": [
-                                            "tiktok",
+                                            "facebook",
                                             "instagram",
+                                            "tiktok",
                                             "youtube"
                                           ]
                                         },
@@ -47389,6 +47823,7 @@
                                                 "video",
                                                 "slideshow"
                                               ],
+                                              "type": "string",
                                               "description": "Filter by content types (video, slideshow)",
                                               "examples": [
                                                 [
@@ -47497,7 +47932,8 @@
                                         "comments",
                                         "videoCount",
                                         "engagementRate"
-                                      ]
+                                      ],
+                                      "type": "string"
                                     },
                                     "metricKey": {
                                       "type": "string"
@@ -47522,14 +47958,17 @@
                                           },
                                           "platform": {
                                             "enum": [
+                                              "facebook",
                                               "instagram",
                                               "tiktok",
                                               "youtube"
                                             ],
-                                            "description": "Social media platform (tiktok, instagram, youtube)",
+                                            "type": "string",
+                                            "description": "Social media platform (facebook, instagram, tiktok, youtube)",
                                             "examples": [
-                                              "tiktok",
+                                              "facebook",
                                               "instagram",
+                                              "tiktok",
                                               "youtube"
                                             ]
                                           },
@@ -47599,6 +48038,7 @@
                                                   "video",
                                                   "slideshow"
                                                 ],
+                                                "type": "string",
                                                 "description": "Filter by content types (video, slideshow)",
                                                 "examples": [
                                                   [
@@ -47738,7 +48178,8 @@
                                                       "lessThanInclusive",
                                                       "greaterThan",
                                                       "greaterThanInclusive"
-                                                    ]
+                                                    ],
+                                                    "type": "string"
                                                   },
                                                   "value": {
                                                     "type": "number"
@@ -47761,7 +48202,8 @@
                                                     "enum": [
                                                       "equal",
                                                       "notEqual"
-                                                    ]
+                                                    ],
+                                                    "type": "string"
                                                   },
                                                   "value": {
                                                     "anyOf": [
@@ -47789,7 +48231,8 @@
                                                       "notIn",
                                                       "contains",
                                                       "doesNotContain"
-                                                    ]
+                                                    ],
+                                                    "type": "string"
                                                   },
                                                   "value": {
                                                     "type": "array",
@@ -47840,7 +48283,8 @@
                                                       "lessThanInclusive",
                                                       "greaterThan",
                                                       "greaterThanInclusive"
-                                                    ]
+                                                    ],
+                                                    "type": "string"
                                                   },
                                                   "value": {
                                                     "type": "number"
@@ -47863,7 +48307,8 @@
                                                     "enum": [
                                                       "equal",
                                                       "notEqual"
-                                                    ]
+                                                    ],
+                                                    "type": "string"
                                                   },
                                                   "value": {
                                                     "anyOf": [
@@ -47891,7 +48336,8 @@
                                                       "notIn",
                                                       "contains",
                                                       "doesNotContain"
-                                                    ]
+                                                    ],
+                                                    "type": "string"
                                                   },
                                                   "value": {
                                                     "type": "array",
@@ -48109,7 +48555,8 @@
                                                         "count",
                                                         "min",
                                                         "max"
-                                                      ]
+                                                      ],
+                                                      "type": "string"
                                                     },
                                                     "as": {
                                                       "type": "string",
@@ -48173,13 +48620,15 @@
                                                   "enum": [
                                                     "progressive",
                                                     "allocation"
-                                                  ]
+                                                  ],
+                                                  "type": "string"
                                                 },
                                                 "payoutTiming": {
                                                   "enum": [
                                                     "gains",
                                                     "milestone"
-                                                  ]
+                                                  ],
+                                                  "type": "string"
                                                 },
                                                 "tierIndex": {
                                                   "type": "integer",
@@ -48267,7 +48716,8 @@
                                                     "count",
                                                     "min",
                                                     "max"
-                                                  ]
+                                                  ],
+                                                  "type": "string"
                                                 },
                                                 "as": {
                                                   "type": "string",
@@ -48370,7 +48820,8 @@
                                               "enum": [
                                                 "allocation",
                                                 "progressive"
-                                              ]
+                                              ],
+                                              "type": "string"
                                             },
                                             "tierIndex": {
                                               "type": "integer",
@@ -48443,7 +48894,8 @@
                                                     "count",
                                                     "min",
                                                     "max"
-                                                  ]
+                                                  ],
+                                                  "type": "string"
                                                 },
                                                 "as": {
                                                   "type": "string",
@@ -48559,7 +49011,8 @@
                                               "enum": [
                                                 "allocation",
                                                 "progressive"
-                                              ]
+                                              ],
+                                              "type": "string"
                                             },
                                             "tierIndex": {
                                               "type": "integer",
@@ -48639,7 +49092,8 @@
                                         "count",
                                         "min",
                                         "max"
-                                      ]
+                                      ],
+                                      "type": "string"
                                     },
                                     "as": {
                                       "type": "string",
@@ -48674,7 +49128,8 @@
                                                   "like",
                                                   "ilike",
                                                   "between"
-                                                ]
+                                                ],
+                                                "type": "string"
                                               },
                                               "column": {
                                                 "type": "string",
@@ -48727,7 +49182,8 @@
                                                   "like",
                                                   "ilike",
                                                   "between"
-                                                ]
+                                                ],
+                                                "type": "string"
                                               },
                                               "column": {
                                                 "type": "string",
@@ -48773,7 +49229,8 @@
                                             "enum": [
                                               "asc",
                                               "desc"
-                                            ]
+                                            ],
+                                            "type": "string"
                                           }
                                         },
                                         "required": [
@@ -48866,7 +49323,8 @@
                                               "left",
                                               "right",
                                               "full"
-                                            ]
+                                            ],
+                                            "type": "string"
                                           }
                                         },
                                         "required": [
@@ -48968,13 +49426,15 @@
                                     "flat",
                                     "rate",
                                     "rate_min_max"
-                                  ]
+                                  ],
+                                  "type": "string"
                                 },
                                 "source": {
                                   "enum": [
                                     "global",
                                     "query"
-                                  ]
+                                  ],
+                                  "type": "string"
                                 },
                                 "queryHash": {
                                   "type": "string"
@@ -49090,13 +49550,15 @@
                                           "enum": [
                                             "allocation",
                                             "progressive"
-                                          ]
+                                          ],
+                                          "type": "string"
                                         },
                                         "payoutTiming": {
                                           "enum": [
                                             "gains",
                                             "milestone"
-                                          ]
+                                          ],
+                                          "type": "string"
                                         },
                                         "appliedTierIndex": {
                                           "type": "integer",
@@ -49253,7 +49715,8 @@
                                     "day",
                                     "week",
                                     "month"
-                                  ]
+                                  ],
+                                  "type": "string"
                                 },
                                 "intervalCount": {
                                   "type": "integer",
@@ -49318,14 +49781,17 @@
                                     },
                                     "platform": {
                                       "enum": [
+                                        "facebook",
                                         "instagram",
                                         "tiktok",
                                         "youtube"
                                       ],
-                                      "description": "Social media platform (tiktok, instagram, youtube)",
+                                      "type": "string",
+                                      "description": "Social media platform (facebook, instagram, tiktok, youtube)",
                                       "examples": [
-                                        "tiktok",
+                                        "facebook",
                                         "instagram",
+                                        "tiktok",
                                         "youtube"
                                       ]
                                     },
@@ -49401,12 +49867,32 @@
                       "engine"
                     ]
                   },
+                  "integrityToken": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "Required integrity token returned by POST /payouts/calculate for this exact calculation payload and billing window. Pass it unchanged."
+                  },
+                  "reference": {
+                    "type": "string",
+                    "maxLength": 255,
+                    "description": "Optional payout reference for reconciliation, invoicing, or external bookkeeping."
+                  },
                   "payoutProvider": {
                     "enum": [
                       "manual",
                       "talentir"
                     ],
+                    "type": "string",
                     "default": "manual"
+                  },
+                  "autoApproveTalentir": {
+                    "type": "boolean",
+                    "default": false
+                  },
+                  "acknowledgeFullPayoutLiability": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Required when payoutProvider is talentir and autoApproveTalentir is true. Confirms that your API caller accepts full responsibility for any payout approval, calculation, recipient, configuration, or integration errors triggered by the request, including any resulting lost funds."
                   }
                 },
                 "required": [
@@ -49415,7 +49901,8 @@
                   "billingPeriodStart",
                   "billingPeriodEnd",
                   "lineItems",
-                  "calculation"
+                  "calculation",
+                  "integrityToken"
                 ]
               }
             }
@@ -50121,6 +50608,7 @@
                 "asc",
                 "desc"
               ],
+              "type": "string",
               "default": "desc",
               "description": "Sort direction",
               "examples": [
@@ -50128,8 +50616,6 @@
                 "desc"
               ]
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           },
@@ -50169,16 +50655,25 @@
             "allowReserved": true
           },
           {
+            "name": "includeEmpty",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            },
+            "allowEmptyValue": true,
+            "allowReserved": true
+          },
+          {
             "name": "mode",
             "in": "query",
             "schema": {
               "enum": [
                 "data",
                 "count"
-              ]
+              ],
+              "type": "string"
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           },
@@ -50268,10 +50763,12 @@
                                 },
                                 "platform": {
                                   "enum": [
+                                    "facebook",
                                     "instagram",
                                     "tiktok",
                                     "youtube"
-                                  ]
+                                  ],
+                                  "type": "string"
                                 },
                                 "platformAccountId": {
                                   "type": "string"
@@ -50281,6 +50778,16 @@
                                   "default": false
                                 },
                                 "username": {
+                                  "anyOf": [
+                                    {
+                                      "type": "string"
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ]
+                                },
+                                "displayName": {
                                   "anyOf": [
                                     {
                                       "type": "string"
@@ -50307,6 +50814,7 @@
                               "closing",
                               "ended"
                             ],
+                            "type": "string",
                             "description": "Campaign lifecycle status derived from validity window. upcoming: validFrom in the future; active: started with no end date; closing: started and has an end date in the present/future; ended: end date is in the past.",
                             "examples": [
                               "active",
@@ -50346,7 +50854,8 @@
                               "day",
                               "week",
                               "month"
-                            ]
+                            ],
+                            "type": "string"
                           },
                           "intervalCount": {
                             "type": "integer",
@@ -50358,12 +50867,14 @@
                             "enum": [
                               "fixed",
                               "rolling"
-                            ]
+                            ],
+                            "type": "string"
                           },
                           "timeZone": {
                             "enum": [
                               "UTC"
-                            ]
+                            ],
+                            "type": "string"
                           },
                           "currency": {
                             "enum": [
@@ -50371,7 +50882,8 @@
                               "EUR",
                               "CHF",
                               "GBP"
-                            ]
+                            ],
+                            "type": "string"
                           },
                           "payoutAmount": {
                             "anyOf": [
@@ -50405,7 +50917,8 @@
                                   "EUR",
                                   "CHF",
                                   "GBP"
-                                ]
+                                ],
+                                "type": "string"
                               },
                               {
                                 "type": "null"
@@ -50959,6 +51472,7 @@
                 "asc",
                 "desc"
               ],
+              "type": "string",
               "default": "desc",
               "description": "Sort direction",
               "examples": [
@@ -50966,8 +51480,6 @@
                 "desc"
               ]
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           },
@@ -51007,16 +51519,25 @@
             "allowReserved": true
           },
           {
+            "name": "includeEmpty",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            },
+            "allowEmptyValue": true,
+            "allowReserved": true
+          },
+          {
             "name": "mode",
             "in": "query",
             "schema": {
               "enum": [
                 "data",
                 "count"
-              ]
+              ],
+              "type": "string"
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           }
@@ -51096,10 +51617,12 @@
                                 },
                                 "platform": {
                                   "enum": [
+                                    "facebook",
                                     "instagram",
                                     "tiktok",
                                     "youtube"
-                                  ]
+                                  ],
+                                  "type": "string"
                                 },
                                 "platformAccountId": {
                                   "type": "string"
@@ -51109,6 +51632,16 @@
                                   "default": false
                                 },
                                 "username": {
+                                  "anyOf": [
+                                    {
+                                      "type": "string"
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ]
+                                },
+                                "displayName": {
                                   "anyOf": [
                                     {
                                       "type": "string"
@@ -51135,6 +51668,7 @@
                               "closing",
                               "ended"
                             ],
+                            "type": "string",
                             "description": "Campaign lifecycle status derived from validity window. upcoming: validFrom in the future; active: started with no end date; closing: started and has an end date in the present/future; ended: end date is in the past.",
                             "examples": [
                               "active",
@@ -51174,7 +51708,8 @@
                               "day",
                               "week",
                               "month"
-                            ]
+                            ],
+                            "type": "string"
                           },
                           "intervalCount": {
                             "type": "integer",
@@ -51186,12 +51721,14 @@
                             "enum": [
                               "fixed",
                               "rolling"
-                            ]
+                            ],
+                            "type": "string"
                           },
                           "timeZone": {
                             "enum": [
                               "UTC"
-                            ]
+                            ],
+                            "type": "string"
                           },
                           "currency": {
                             "enum": [
@@ -51199,7 +51736,8 @@
                               "EUR",
                               "CHF",
                               "GBP"
-                            ]
+                            ],
+                            "type": "string"
                           },
                           "payoutAmount": {
                             "anyOf": [
@@ -51233,7 +51771,8 @@
                                   "EUR",
                                   "CHF",
                                   "GBP"
-                                ]
+                                ],
+                                "type": "string"
                               },
                               {
                                 "type": "null"
@@ -51887,6 +52426,7 @@
                 "asc",
                 "desc"
               ],
+              "type": "string",
               "default": "desc",
               "description": "Sort direction",
               "examples": [
@@ -51894,8 +52434,6 @@
                 "desc"
               ]
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           },
@@ -51945,10 +52483,9 @@
                 "deleted",
                 "requested",
                 "expired"
-              ]
+              ],
+              "type": "string"
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           },
@@ -51959,10 +52496,9 @@
               "enum": [
                 "data",
                 "count"
-              ]
+              ],
+              "type": "string"
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           }
@@ -52042,10 +52578,12 @@
                                 },
                                 "platform": {
                                   "enum": [
+                                    "facebook",
                                     "instagram",
                                     "tiktok",
                                     "youtube"
-                                  ]
+                                  ],
+                                  "type": "string"
                                 },
                                 "platformAccountId": {
                                   "type": "string"
@@ -52055,6 +52593,16 @@
                                   "default": false
                                 },
                                 "username": {
+                                  "anyOf": [
+                                    {
+                                      "type": "string"
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ]
+                                },
+                                "displayName": {
                                   "anyOf": [
                                     {
                                       "type": "string"
@@ -52081,6 +52629,7 @@
                               "closing",
                               "ended"
                             ],
+                            "type": "string",
                             "description": "Campaign lifecycle status derived from validity window. upcoming: validFrom in the future; active: started with no end date; closing: started and has an end date in the present/future; ended: end date is in the past.",
                             "examples": [
                               "active",
@@ -52120,7 +52669,8 @@
                               "day",
                               "week",
                               "month"
-                            ]
+                            ],
+                            "type": "string"
                           },
                           "intervalCount": {
                             "type": "integer",
@@ -52132,12 +52682,14 @@
                             "enum": [
                               "fixed",
                               "rolling"
-                            ]
+                            ],
+                            "type": "string"
                           },
                           "timeZone": {
                             "enum": [
                               "UTC"
-                            ]
+                            ],
+                            "type": "string"
                           },
                           "amount": {
                             "type": "number",
@@ -52154,7 +52706,8 @@
                               "EUR",
                               "CHF",
                               "GBP"
-                            ]
+                            ],
+                            "type": "string"
                           },
                           "lineItems": {
                             "type": "array",
@@ -52180,7 +52733,8 @@
                               {
                                 "enum": [
                                   "talentir"
-                                ]
+                                ],
+                                "type": "string"
                               },
                               {
                                 "type": "null"
@@ -52221,7 +52775,18 @@
                                   "deleted",
                                   "requested",
                                   "expired"
-                                ]
+                                ],
+                                "type": "string"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "reference": {
+                            "anyOf": [
+                              {
+                                "type": "string"
                               },
                               {
                                 "type": "null"
@@ -52314,6 +52879,7 @@
                           "providerPayoutId",
                           "providerState",
                           "providerPayoutStatus",
+                          "reference",
                           "paidAt",
                           "paidByUserId",
                           "paidByUser"
@@ -53895,21 +54461,24 @@
                   "type": "array",
                   "items": {
                     "enum": [
+                      "facebook",
                       "instagram",
                       "tiktok",
                       "youtube"
                     ],
-                    "description": "Social media platform (tiktok, instagram, youtube)",
+                    "type": "string",
+                    "description": "Social media platform (facebook, instagram, tiktok, youtube)",
                     "examples": [
-                      "tiktok",
+                      "facebook",
                       "instagram",
+                      "tiktok",
                       "youtube"
                     ]
                   },
-                  "description": "Social media platforms (tiktok, instagram, youtube)",
+                  "description": "Social media platforms (facebook, instagram, tiktok, youtube)",
                   "examples": [
                     [
-                      "tiktok",
+                      "facebook",
                       "instagram"
                     ],
                     [
@@ -53922,10 +54491,10 @@
                   "type": "null"
                 }
               ],
-              "description": "Social media platforms (tiktok, instagram, youtube)",
+              "description": "Social media platforms (facebook, instagram, tiktok, youtube)",
               "examples": [
                 [
-                  "tiktok",
+                  "facebook",
                   "instagram"
                 ],
                 [
@@ -53998,6 +54567,7 @@
                       "video",
                       "slideshow"
                     ],
+                    "type": "string",
                     "description": "Filter by content types (video, slideshow)",
                     "examples": [
                       [
@@ -54095,10 +54665,9 @@
                 "internal",
                 "competitors",
                 "all"
-              ]
+              ],
+              "type": "string"
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           },
@@ -54110,10 +54679,9 @@
               "enum": [
                 "allEligible",
                 "onlyPublished"
-              ]
+              ],
+              "type": "string"
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           },
@@ -54172,6 +54740,7 @@
                 "bookmarkCountInPeriod",
                 "engagementRateInPeriod"
               ],
+              "type": "string",
               "default": "viewCount",
               "description": "Metric to sort videos by. Supports both lifetime totals and period-specific gains",
               "examples": [
@@ -54181,8 +54750,6 @@
                 "engagementRateInPeriod"
               ]
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           }
@@ -55056,21 +55623,24 @@
                   "type": "array",
                   "items": {
                     "enum": [
+                      "facebook",
                       "instagram",
                       "tiktok",
                       "youtube"
                     ],
-                    "description": "Social media platform (tiktok, instagram, youtube)",
+                    "type": "string",
+                    "description": "Social media platform (facebook, instagram, tiktok, youtube)",
                     "examples": [
-                      "tiktok",
+                      "facebook",
                       "instagram",
+                      "tiktok",
                       "youtube"
                     ]
                   },
-                  "description": "Social media platforms (tiktok, instagram, youtube)",
+                  "description": "Social media platforms (facebook, instagram, tiktok, youtube)",
                   "examples": [
                     [
-                      "tiktok",
+                      "facebook",
                       "instagram"
                     ],
                     [
@@ -55083,10 +55653,10 @@
                   "type": "null"
                 }
               ],
-              "description": "Social media platforms (tiktok, instagram, youtube)",
+              "description": "Social media platforms (facebook, instagram, tiktok, youtube)",
               "examples": [
                 [
-                  "tiktok",
+                  "facebook",
                   "instagram"
                 ],
                 [
@@ -55159,6 +55729,7 @@
                       "video",
                       "slideshow"
                     ],
+                    "type": "string",
                     "description": "Filter by content types (video, slideshow)",
                     "examples": [
                       [
@@ -55256,10 +55827,9 @@
                 "internal",
                 "competitors",
                 "all"
-              ]
+              ],
+              "type": "string"
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           },
@@ -55271,10 +55841,9 @@
               "enum": [
                 "allEligible",
                 "onlyPublished"
-              ]
+              ],
+              "type": "string"
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           },
@@ -55337,6 +55906,7 @@
                 "engagementRateInPeriod",
                 "averageViewsPerVideoInPeriod"
               ],
+              "type": "string",
               "default": "viewCount",
               "description": "Metric to sort accounts by. Supports both lifetime totals and period-specific gains",
               "examples": [
@@ -55346,8 +55916,6 @@
                 "videoCountInPeriod"
               ]
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           }
@@ -55369,14 +55937,17 @@
                       },
                       "platform": {
                         "enum": [
+                          "facebook",
                           "instagram",
                           "tiktok",
                           "youtube"
                         ],
-                        "description": "Social media platform (tiktok, instagram, youtube)",
+                        "type": "string",
+                        "description": "Social media platform (facebook, instagram, tiktok, youtube)",
                         "examples": [
-                          "tiktok",
+                          "facebook",
                           "instagram",
+                          "tiktok",
                           "youtube"
                         ]
                       },
@@ -56172,21 +56743,24 @@
                   "type": "array",
                   "items": {
                     "enum": [
+                      "facebook",
                       "instagram",
                       "tiktok",
                       "youtube"
                     ],
-                    "description": "Social media platform (tiktok, instagram, youtube)",
+                    "type": "string",
+                    "description": "Social media platform (facebook, instagram, tiktok, youtube)",
                     "examples": [
-                      "tiktok",
+                      "facebook",
                       "instagram",
+                      "tiktok",
                       "youtube"
                     ]
                   },
-                  "description": "Social media platforms (tiktok, instagram, youtube)",
+                  "description": "Social media platforms (facebook, instagram, tiktok, youtube)",
                   "examples": [
                     [
-                      "tiktok",
+                      "facebook",
                       "instagram"
                     ],
                     [
@@ -56199,10 +56773,10 @@
                   "type": "null"
                 }
               ],
-              "description": "Social media platforms (tiktok, instagram, youtube)",
+              "description": "Social media platforms (facebook, instagram, tiktok, youtube)",
               "examples": [
                 [
-                  "tiktok",
+                  "facebook",
                   "instagram"
                 ],
                 [
@@ -56275,6 +56849,7 @@
                       "video",
                       "slideshow"
                     ],
+                    "type": "string",
                     "description": "Filter by content types (video, slideshow)",
                     "examples": [
                       [
@@ -56372,10 +56947,9 @@
                 "internal",
                 "competitors",
                 "all"
-              ]
+              ],
+              "type": "string"
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           },
@@ -56387,10 +56961,9 @@
               "enum": [
                 "allEligible",
                 "onlyPublished"
-              ]
+              ],
+              "type": "string"
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           },
@@ -56453,6 +57026,7 @@
                 "engagementRateInPeriod",
                 "averageViewsPerVideoInPeriod"
               ],
+              "type": "string",
               "default": "viewCount",
               "description": "Metric to sort creators by. Supports both lifetime totals and period-specific gains. Aggregates across all linked accounts.",
               "examples": [
@@ -56462,8 +57036,6 @@
                 "videoCountInPeriod"
               ]
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           }
@@ -56569,14 +57141,17 @@
                             },
                             "platform": {
                               "enum": [
+                                "facebook",
                                 "instagram",
                                 "tiktok",
                                 "youtube"
                               ],
+                              "type": "string",
                               "description": "Social media platform",
                               "examples": [
-                                "tiktok",
+                                "facebook",
                                 "instagram",
+                                "tiktok",
                                 "youtube"
                               ]
                             },
@@ -57253,21 +57828,24 @@
                   "type": "array",
                   "items": {
                     "enum": [
+                      "facebook",
                       "instagram",
                       "tiktok",
                       "youtube"
                     ],
-                    "description": "Social media platform (tiktok, instagram, youtube)",
+                    "type": "string",
+                    "description": "Social media platform (facebook, instagram, tiktok, youtube)",
                     "examples": [
-                      "tiktok",
+                      "facebook",
                       "instagram",
+                      "tiktok",
                       "youtube"
                     ]
                   },
-                  "description": "Social media platforms (tiktok, instagram, youtube)",
+                  "description": "Social media platforms (facebook, instagram, tiktok, youtube)",
                   "examples": [
                     [
-                      "tiktok",
+                      "facebook",
                       "instagram"
                     ],
                     [
@@ -57280,10 +57858,10 @@
                   "type": "null"
                 }
               ],
-              "description": "Social media platforms (tiktok, instagram, youtube)",
+              "description": "Social media platforms (facebook, instagram, tiktok, youtube)",
               "examples": [
                 [
-                  "tiktok",
+                  "facebook",
                   "instagram"
                 ],
                 [
@@ -57356,6 +57934,7 @@
                       "video",
                       "slideshow"
                     ],
+                    "type": "string",
                     "description": "Filter by content types (video, slideshow)",
                     "examples": [
                       [
@@ -57453,10 +58032,9 @@
                 "internal",
                 "competitors",
                 "all"
-              ]
+              ],
+              "type": "string"
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           },
@@ -57468,10 +58046,9 @@
               "enum": [
                 "allEligible",
                 "onlyPublished"
-              ]
+              ],
+              "type": "string"
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           }
@@ -58160,21 +58737,24 @@
                   "type": "array",
                   "items": {
                     "enum": [
+                      "facebook",
                       "instagram",
                       "tiktok",
                       "youtube"
                     ],
-                    "description": "Social media platform (tiktok, instagram, youtube)",
+                    "type": "string",
+                    "description": "Social media platform (facebook, instagram, tiktok, youtube)",
                     "examples": [
-                      "tiktok",
+                      "facebook",
                       "instagram",
+                      "tiktok",
                       "youtube"
                     ]
                   },
-                  "description": "Social media platforms (tiktok, instagram, youtube)",
+                  "description": "Social media platforms (facebook, instagram, tiktok, youtube)",
                   "examples": [
                     [
-                      "tiktok",
+                      "facebook",
                       "instagram"
                     ],
                     [
@@ -58187,10 +58767,10 @@
                   "type": "null"
                 }
               ],
-              "description": "Social media platforms (tiktok, instagram, youtube)",
+              "description": "Social media platforms (facebook, instagram, tiktok, youtube)",
               "examples": [
                 [
-                  "tiktok",
+                  "facebook",
                   "instagram"
                 ],
                 [
@@ -58263,6 +58843,7 @@
                       "video",
                       "slideshow"
                     ],
+                    "type": "string",
                     "description": "Filter by content types (video, slideshow)",
                     "examples": [
                       [
@@ -58360,10 +58941,9 @@
                 "internal",
                 "competitors",
                 "all"
-              ]
+              ],
+              "type": "string"
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           },
@@ -58375,10 +58955,9 @@
               "enum": [
                 "allEligible",
                 "onlyPublished"
-              ]
+              ],
+              "type": "string"
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           }
@@ -59021,21 +59600,24 @@
                         "type": "array",
                         "items": {
                           "enum": [
+                            "facebook",
                             "instagram",
                             "tiktok",
                             "youtube"
                           ],
-                          "description": "Social media platform (tiktok, instagram, youtube)",
+                          "type": "string",
+                          "description": "Social media platform (facebook, instagram, tiktok, youtube)",
                           "examples": [
-                            "tiktok",
+                            "facebook",
                             "instagram",
+                            "tiktok",
                             "youtube"
                           ]
                         },
-                        "description": "Social media platforms (tiktok, instagram, youtube)",
+                        "description": "Social media platforms (facebook, instagram, tiktok, youtube)",
                         "examples": [
                           [
-                            "tiktok",
+                            "facebook",
                             "instagram"
                           ],
                           [
@@ -59048,10 +59630,10 @@
                         "type": "null"
                       }
                     ],
-                    "description": "Social media platforms (tiktok, instagram, youtube)",
+                    "description": "Social media platforms (facebook, instagram, tiktok, youtube)",
                     "examples": [
                       [
-                        "tiktok",
+                        "facebook",
                         "instagram"
                       ],
                       [
@@ -59106,6 +59688,7 @@
                             "video",
                             "slideshow"
                           ],
+                          "type": "string",
                           "description": "Filter by content types (video, slideshow)",
                           "examples": [
                             [
@@ -59185,13 +59768,15 @@
                       "internal",
                       "competitors",
                       "all"
-                    ]
+                    ],
+                    "type": "string"
                   },
                   "publicationMode": {
                     "enum": [
                       "allEligible",
                       "onlyPublished"
-                    ]
+                    ],
+                    "type": "string"
                   }
                 },
                 "required": [
@@ -59789,7 +60374,8 @@
                       "Failed",
                       "Cancelled",
                       "Skipped"
-                    ]
+                    ],
+                    "type": "string"
                   }
                 },
                 {
@@ -59857,20 +60443,24 @@
                               "Failed",
                               "Cancelled",
                               "Skipped"
-                            ]
+                            ],
+                            "type": "string"
                           },
                           "platform": {
                             "anyOf": [
                               {
                                 "enum": [
+                                  "facebook",
                                   "instagram",
                                   "tiktok",
                                   "youtube"
                                 ],
-                                "description": "Social media platform (tiktok, instagram, youtube)",
+                                "type": "string",
+                                "description": "Social media platform (facebook, instagram, tiktok, youtube)",
                                 "examples": [
-                                  "tiktok",
+                                  "facebook",
                                   "instagram",
+                                  "tiktok",
                                   "youtube"
                                 ]
                               },
@@ -59884,7 +60474,8 @@
                               "accounts",
                               "videos",
                               "unknown"
-                            ]
+                            ],
+                            "type": "string"
                           },
                           "identifier": {
                             "anyOf": [
@@ -59904,7 +60495,8 @@
                                   "onboarding",
                                   "user_add",
                                   "user_refresh"
-                                ]
+                                ],
+                                "type": "string"
                               },
                               {
                                 "type": "null"
@@ -60469,6 +61061,7 @@
                 "asc",
                 "desc"
               ],
+              "type": "string",
               "default": "desc",
               "description": "Sort direction",
               "examples": [
@@ -60476,8 +61069,6 @@
                 "desc"
               ]
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           },
@@ -60544,21 +61135,24 @@
                   "type": "array",
                   "items": {
                     "enum": [
+                      "facebook",
                       "instagram",
                       "tiktok",
                       "youtube"
                     ],
-                    "description": "Social media platform (tiktok, instagram, youtube)",
+                    "type": "string",
+                    "description": "Social media platform (facebook, instagram, tiktok, youtube)",
                     "examples": [
-                      "tiktok",
+                      "facebook",
                       "instagram",
+                      "tiktok",
                       "youtube"
                     ]
                   },
-                  "description": "Social media platforms (tiktok, instagram, youtube)",
+                  "description": "Social media platforms (facebook, instagram, tiktok, youtube)",
                   "examples": [
                     [
-                      "tiktok",
+                      "facebook",
                       "instagram"
                     ],
                     [
@@ -60571,10 +61165,10 @@
                   "type": "null"
                 }
               ],
-              "description": "Social media platforms (tiktok, instagram, youtube)",
+              "description": "Social media platforms (facebook, instagram, tiktok, youtube)",
               "examples": [
                 [
-                  "tiktok",
+                  "facebook",
                   "instagram"
                 ],
                 [
@@ -60610,10 +61204,12 @@
                           },
                           "platform": {
                             "enum": [
+                              "facebook",
                               "instagram",
                               "tiktok",
                               "youtube"
-                            ]
+                            ],
+                            "type": "string"
                           },
                           "platformAccountId": {
                             "type": "string"
@@ -60636,7 +61232,8 @@
                               "user",
                               "system",
                               "api_token"
-                            ]
+                            ],
+                            "type": "string"
                           },
                           "userId": {
                             "type": "string"
@@ -61235,14 +61832,17 @@
                         },
                         "platform": {
                           "enum": [
+                            "facebook",
                             "instagram",
                             "tiktok",
                             "youtube"
                           ],
-                          "description": "Social media platform (tiktok, instagram, youtube)",
+                          "type": "string",
+                          "description": "Social media platform (facebook, instagram, tiktok, youtube)",
                           "examples": [
-                            "tiktok",
+                            "facebook",
                             "instagram",
+                            "tiktok",
                             "youtube"
                           ]
                         },
@@ -62226,10 +62826,9 @@
                 "14d",
                 "30d"
               ],
+              "type": "string",
               "default": "30d"
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           },
@@ -62243,10 +62842,9 @@
                 "engagement",
                 "outlier"
               ],
+              "type": "string",
               "default": "latest"
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           },
@@ -62328,7 +62926,8 @@
                   "subscription_content",
                   "other",
                   "unknown"
-                ]
+                ],
+                "type": "string"
               },
               "default": []
             },
@@ -62363,7 +62962,8 @@
                   "news_commentary",
                   "other",
                   "unknown"
-                ]
+                ],
+                "type": "string"
               },
               "default": []
             },
@@ -62392,7 +62992,8 @@
                   "cinematic_montage",
                   "other",
                   "unknown"
-                ]
+                ],
+                "type": "string"
               },
               "default": []
             },
@@ -62421,7 +63022,8 @@
                   "challenge_dare",
                   "other",
                   "unknown"
-                ]
+                ],
+                "type": "string"
               },
               "default": []
             },
@@ -62439,10 +63041,9 @@
                 "yes",
                 "no"
               ],
+              "type": "string",
               "default": "any"
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           },
@@ -62455,10 +63056,9 @@
                 "yes",
                 "no"
               ],
+              "type": "string",
               "default": "any"
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           },
@@ -62520,14 +63120,17 @@
                           },
                           "platform": {
                             "enum": [
+                              "facebook",
                               "instagram",
                               "tiktok",
                               "youtube"
                             ],
-                            "description": "Social media platform (tiktok, instagram, youtube)",
+                            "type": "string",
+                            "description": "Social media platform (facebook, instagram, tiktok, youtube)",
                             "examples": [
-                              "tiktok",
+                              "facebook",
                               "instagram",
+                              "tiktok",
                               "youtube"
                             ]
                           },
@@ -63307,7 +63910,8 @@
                           "enum": [
                             "missing",
                             "succeeded"
-                          ]
+                          ],
+                          "type": "string"
                         },
                         "confidence": {
                           "anyOf": [
@@ -63395,7 +63999,8 @@
                           "enum": [
                             "missing",
                             "succeeded"
-                          ]
+                          ],
+                          "type": "string"
                         },
                         "confidence": {
                           "anyOf": [
@@ -63570,7 +64175,8 @@
                           "enum": [
                             "missing",
                             "succeeded"
-                          ]
+                          ],
+                          "type": "string"
                         },
                         "confidence": {
                           "anyOf": [
@@ -63870,7 +64476,8 @@
                           "enum": [
                             "missing",
                             "succeeded"
-                          ]
+                          ],
+                          "type": "string"
                         },
                         "confidence": {
                           "anyOf": [
@@ -63957,7 +64564,8 @@
                           "enum": [
                             "missing",
                             "succeeded"
-                          ]
+                          ],
+                          "type": "string"
                         },
                         "confidence": {
                           "anyOf": [
@@ -64657,6 +65265,7 @@
                 "asc",
                 "desc"
               ],
+              "type": "string",
               "default": "desc",
               "description": "Sort direction",
               "examples": [
@@ -64664,8 +65273,6 @@
                 "desc"
               ]
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           },
@@ -64677,10 +65284,9 @@
                 "apple",
                 "google"
               ],
+              "type": "string",
               "description": "App provider for integrations (apple)"
             },
-            "style": "deepObject",
-            "explode": true,
             "allowEmptyValue": true,
             "allowReserved": true
           },

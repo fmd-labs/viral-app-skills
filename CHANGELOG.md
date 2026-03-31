@@ -6,6 +6,16 @@ The format is based on Keep a Changelog, and this project follows Semantic Versi
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-03-31
+
+### Changed
+- Refreshed the pinned OpenAPI spec from `https://viral.app/api/v1/openapi.json`.
+- Expanded platform enums across the API to include `facebook`, which updates generated CLI validation and help for affected commands.
+- Added `sortCol` and `sortDir` query parameters to `campaigns-list`.
+- Added `includeEmpty` query parameters to `payouts-due` and `payouts-canceled`.
+- Added `displayName` to `accounts-tracked-list` responses.
+- Updated the payout flow contract so `payouts-calculate` now returns required `integrityToken` and `lineItems`, and `payouts-initiate` now requires `integrityToken` and supports `reference`, `autoApproveTalentir`, and `acknowledgeFullPayoutLiability`.
+
 ## [0.1.5] - 2026-03-19
 
 ### Added
